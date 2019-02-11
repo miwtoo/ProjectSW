@@ -94,7 +94,25 @@
         <ObjectProperty IRI="#hasfeatures"/>
     </Declaration>
     <Declaration>
+        <NamedIndividual IRI="#ACER_EB192QB"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#ASUS_ProArt_PA32UC-K"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#ASUS_XG32VQ"/>
+    </Declaration>
+    <Declaration>
         <NamedIndividual IRI="#AdobeRGB_99_percents"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#BenQ_PD3200U"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#CIE_82percent"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#DELL_ALIENWARE_AW2518H"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#DP"/>
@@ -115,7 +133,13 @@
         <NamedIndividual IRI="#HDMI"/>
     </Declaration>
     <Declaration>
+        <NamedIndividual IRI="#HP_20KD"/>
+    </Declaration>
+    <Declaration>
         <NamedIndividual IRI="#IPS"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#NTSC_72percent"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#TN"/>
@@ -130,16 +154,46 @@
         <NamedIndividual IRI="#VGA"/>
     </Declaration>
     <Declaration>
+        <NamedIndividual IRI="#sRGB_100percent"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#sRGB_125percent"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#sRGB_99percent"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#1ms"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#1366x768"/>
+    </Declaration>
+    <Declaration>
         <NamedIndividual IRI="#14000"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#144"/>
     </Declaration>
     <Declaration>
+        <NamedIndividual IRI="#1440x900"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#16:10"/>
+    </Declaration>
+    <Declaration>
         <NamedIndividual IRI="#16:9"/>
     </Declaration>
     <Declaration>
+        <NamedIndividual IRI="#18.5inch"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#19.5inch"/>
+    </Declaration>
+    <Declaration>
         <NamedIndividual IRI="#1920x1080"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#2050"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#21.5inch"/>
@@ -148,13 +202,31 @@
         <NamedIndividual IRI="#23400"/>
     </Declaration>
     <Declaration>
+        <NamedIndividual IRI="#23900"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#24.5inch"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#240"/>
+    </Declaration>
+    <Declaration>
         <NamedIndividual IRI="#2560x1440"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#26330"/>
     </Declaration>
     <Declaration>
+        <NamedIndividual IRI="#2650"/>
+    </Declaration>
+    <Declaration>
         <NamedIndividual IRI="#27inch"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#29900"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#31.5inch"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#32inch"/>
@@ -169,6 +241,9 @@
         <NamedIndividual IRI="#38.5inch"/>
     </Declaration>
     <Declaration>
+        <NamedIndividual IRI="#3840x2160"/>
+    </Declaration>
+    <Declaration>
         <NamedIndividual IRI="#4ms"/>
     </Declaration>
     <Declaration>
@@ -179,6 +254,12 @@
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#60"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#65"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#68378"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#8ms"/>
@@ -214,8 +295,32 @@
         <Class IRI="#Monitor"/>
     </SubClassOf>
     <ClassAssertion>
+        <Class IRI="#General"/>
+        <NamedIndividual IRI="#ACER_EB192QB"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Graphic"/>
+        <NamedIndividual IRI="#ASUS_ProArt_PA32UC-K"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Gamming"/>
+        <NamedIndividual IRI="#ASUS_XG32VQ"/>
+    </ClassAssertion>
+    <ClassAssertion>
         <Class IRI="#Color"/>
         <NamedIndividual IRI="#AdobeRGB_99_percents"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Graphic"/>
+        <NamedIndividual IRI="#BenQ_PD3200U"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Color"/>
+        <NamedIndividual IRI="#CIE_82percent"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Gamming"/>
+        <NamedIndividual IRI="#DELL_ALIENWARE_AW2518H"/>
     </ClassAssertion>
     <ClassAssertion>
         <Class IRI="#Port"/>
@@ -242,8 +347,16 @@
         <NamedIndividual IRI="#HDMI"/>
     </ClassAssertion>
     <ClassAssertion>
+        <Class IRI="#General"/>
+        <NamedIndividual IRI="#HP_20KD"/>
+    </ClassAssertion>
+    <ClassAssertion>
         <Class IRI="#Panel_Type"/>
         <NamedIndividual IRI="#IPS"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Color"/>
+        <NamedIndividual IRI="#NTSC_72percent"/>
     </ClassAssertion>
     <ClassAssertion>
         <Class IRI="#Panel_Type"/>
@@ -262,6 +375,26 @@
         <NamedIndividual IRI="#VGA"/>
     </ClassAssertion>
     <ClassAssertion>
+        <Class IRI="#Color"/>
+        <NamedIndividual IRI="#sRGB_100percent"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Color"/>
+        <NamedIndividual IRI="#sRGB_125percent"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Color"/>
+        <NamedIndividual IRI="#sRGB_99percent"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#ResponTime"/>
+        <NamedIndividual IRI="#1ms"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Resolution"/>
+        <NamedIndividual IRI="#1366x768"/>
+    </ClassAssertion>
+    <ClassAssertion>
         <Class IRI="#Price"/>
         <NamedIndividual IRI="#14000"/>
     </ClassAssertion>
@@ -270,12 +403,32 @@
         <NamedIndividual IRI="#144"/>
     </ClassAssertion>
     <ClassAssertion>
+        <Class IRI="#Resolution"/>
+        <NamedIndividual IRI="#1440x900"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Aspectratio"/>
+        <NamedIndividual IRI="#16:10"/>
+    </ClassAssertion>
+    <ClassAssertion>
         <Class IRI="#Aspectratio"/>
         <NamedIndividual IRI="#16:9"/>
     </ClassAssertion>
     <ClassAssertion>
+        <Class IRI="#Size"/>
+        <NamedIndividual IRI="#18.5inch"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Size"/>
+        <NamedIndividual IRI="#19.5inch"/>
+    </ClassAssertion>
+    <ClassAssertion>
         <Class IRI="#Resolution"/>
         <NamedIndividual IRI="#1920x1080"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Price"/>
+        <NamedIndividual IRI="#2050"/>
     </ClassAssertion>
     <ClassAssertion>
         <Class IRI="#Size"/>
@@ -286,6 +439,18 @@
         <NamedIndividual IRI="#23400"/>
     </ClassAssertion>
     <ClassAssertion>
+        <Class IRI="#Price"/>
+        <NamedIndividual IRI="#23900"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Size"/>
+        <NamedIndividual IRI="#24.5inch"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#RefreshRate"/>
+        <NamedIndividual IRI="#240"/>
+    </ClassAssertion>
+    <ClassAssertion>
         <Class IRI="#Resolution"/>
         <NamedIndividual IRI="#2560x1440"/>
     </ClassAssertion>
@@ -294,8 +459,16 @@
         <NamedIndividual IRI="#26330"/>
     </ClassAssertion>
     <ClassAssertion>
+        <Class IRI="#Price"/>
+        <NamedIndividual IRI="#2650"/>
+    </ClassAssertion>
+    <ClassAssertion>
         <Class IRI="#Size"/>
         <NamedIndividual IRI="#27inch"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Size"/>
+        <NamedIndividual IRI="#31.5inch"/>
     </ClassAssertion>
     <ClassAssertion>
         <Class IRI="#Size"/>
@@ -314,6 +487,10 @@
         <NamedIndividual IRI="#38.5inch"/>
     </ClassAssertion>
     <ClassAssertion>
+        <Class IRI="#Resolution"/>
+        <NamedIndividual IRI="#3840x2160"/>
+    </ClassAssertion>
+    <ClassAssertion>
         <Class IRI="#ResponTime"/>
         <NamedIndividual IRI="#4ms"/>
     </ClassAssertion>
@@ -330,6 +507,14 @@
         <NamedIndividual IRI="#60"/>
     </ClassAssertion>
     <ClassAssertion>
+        <Class IRI="#RefreshRate"/>
+        <NamedIndividual IRI="#65"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Price"/>
+        <NamedIndividual IRI="#68378"/>
+    </ClassAssertion>
+    <ClassAssertion>
         <Class IRI="#ResponTime"/>
         <NamedIndividual IRI="#8ms"/>
     </ClassAssertion>
@@ -343,8 +528,268 @@
     </ClassAssertion>
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="#hasAspectratio"/>
+        <NamedIndividual IRI="#ACER_EB192QB"/>
+        <NamedIndividual IRI="#16:9"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasColor"/>
+        <NamedIndividual IRI="#ACER_EB192QB"/>
+        <NamedIndividual IRI="#NTSC_72percent"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasPaneltype"/>
+        <NamedIndividual IRI="#ACER_EB192QB"/>
+        <NamedIndividual IRI="#TN"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasPort"/>
+        <NamedIndividual IRI="#ACER_EB192QB"/>
+        <NamedIndividual IRI="#VGA"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasPrice"/>
+        <NamedIndividual IRI="#ACER_EB192QB"/>
+        <NamedIndividual IRI="#2050"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasRefreshRate"/>
+        <NamedIndividual IRI="#ACER_EB192QB"/>
+        <NamedIndividual IRI="#60"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasResolution"/>
+        <NamedIndividual IRI="#ACER_EB192QB"/>
+        <NamedIndividual IRI="#1366x768"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasRespontime"/>
+        <NamedIndividual IRI="#ACER_EB192QB"/>
+        <NamedIndividual IRI="#5ms"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasSize"/>
+        <NamedIndividual IRI="#ACER_EB192QB"/>
+        <NamedIndividual IRI="#18.5inch"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasAspectratio"/>
+        <NamedIndividual IRI="#ASUS_ProArt_PA32UC-K"/>
+        <NamedIndividual IRI="#16:9"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasColor"/>
+        <NamedIndividual IRI="#ASUS_ProArt_PA32UC-K"/>
+        <NamedIndividual IRI="#AdobeRGB_99_percents"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasPaneltype"/>
+        <NamedIndividual IRI="#ASUS_ProArt_PA32UC-K"/>
+        <NamedIndividual IRI="#IPS"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasPort"/>
+        <NamedIndividual IRI="#ASUS_ProArt_PA32UC-K"/>
+        <NamedIndividual IRI="#DP"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasPort"/>
+        <NamedIndividual IRI="#ASUS_ProArt_PA32UC-K"/>
+        <NamedIndividual IRI="#HDMI"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasPrice"/>
+        <NamedIndividual IRI="#ASUS_ProArt_PA32UC-K"/>
+        <NamedIndividual IRI="#68378"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasRefreshRate"/>
+        <NamedIndividual IRI="#ASUS_ProArt_PA32UC-K"/>
+        <NamedIndividual IRI="#65"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasResolution"/>
+        <NamedIndividual IRI="#ASUS_ProArt_PA32UC-K"/>
+        <NamedIndividual IRI="#3840x2160"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasRespontime"/>
+        <NamedIndividual IRI="#ASUS_ProArt_PA32UC-K"/>
+        <NamedIndividual IRI="#5ms"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasSize"/>
+        <NamedIndividual IRI="#ASUS_ProArt_PA32UC-K"/>
+        <NamedIndividual IRI="#32inch"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasAspectratio"/>
+        <NamedIndividual IRI="#ASUS_XG32VQ"/>
+        <NamedIndividual IRI="#16:9"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasColor"/>
+        <NamedIndividual IRI="#ASUS_XG32VQ"/>
+        <NamedIndividual IRI="#sRGB_125percent"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasPaneltype"/>
+        <NamedIndividual IRI="#ASUS_XG32VQ"/>
+        <NamedIndividual IRI="#VA"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasPort"/>
+        <NamedIndividual IRI="#ASUS_XG32VQ"/>
+        <NamedIndividual IRI="#DP"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasPort"/>
+        <NamedIndividual IRI="#ASUS_XG32VQ"/>
+        <NamedIndividual IRI="#HDMI"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasPrice"/>
+        <NamedIndividual IRI="#ASUS_XG32VQ"/>
+        <NamedIndividual IRI="#23900"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasRefreshRate"/>
+        <NamedIndividual IRI="#ASUS_XG32VQ"/>
+        <NamedIndividual IRI="#144"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasResolution"/>
+        <NamedIndividual IRI="#ASUS_XG32VQ"/>
+        <NamedIndividual IRI="#2560x1440"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasRespontime"/>
+        <NamedIndividual IRI="#ASUS_XG32VQ"/>
+        <NamedIndividual IRI="#4ms"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasSize"/>
+        <NamedIndividual IRI="#ASUS_XG32VQ"/>
+        <NamedIndividual IRI="#31.5inch"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasfeatures"/>
+        <NamedIndividual IRI="#ASUS_XG32VQ"/>
+        <NamedIndividual IRI="#Free-Sync"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasAspectratio"/>
+        <NamedIndividual IRI="#BenQ_PD3200U"/>
+        <NamedIndividual IRI="#16:9"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasColor"/>
+        <NamedIndividual IRI="#BenQ_PD3200U"/>
+        <NamedIndividual IRI="#sRGB_100percent"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasPaneltype"/>
+        <NamedIndividual IRI="#BenQ_PD3200U"/>
+        <NamedIndividual IRI="#IPS"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasPort"/>
+        <NamedIndividual IRI="#BenQ_PD3200U"/>
+        <NamedIndividual IRI="#DP"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasPort"/>
+        <NamedIndividual IRI="#BenQ_PD3200U"/>
+        <NamedIndividual IRI="#HDMI"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasPrice"/>
+        <NamedIndividual IRI="#BenQ_PD3200U"/>
+        <NamedIndividual IRI="#29900"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasRefreshRate"/>
+        <NamedIndividual IRI="#BenQ_PD3200U"/>
+        <NamedIndividual IRI="#60"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasResolution"/>
+        <NamedIndividual IRI="#BenQ_PD3200U"/>
+        <NamedIndividual IRI="#3840x2160"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasRespontime"/>
+        <NamedIndividual IRI="#BenQ_PD3200U"/>
+        <NamedIndividual IRI="#4ms"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasSize"/>
+        <NamedIndividual IRI="#BenQ_PD3200U"/>
+        <NamedIndividual IRI="#32inch"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasAspectratio"/>
+        <NamedIndividual IRI="#DELL_ALIENWARE_AW2518H"/>
+        <NamedIndividual IRI="#16:9"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasColor"/>
+        <NamedIndividual IRI="#DELL_ALIENWARE_AW2518H"/>
+        <NamedIndividual IRI="#CIE_82percent"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasPaneltype"/>
+        <NamedIndividual IRI="#DELL_ALIENWARE_AW2518H"/>
+        <NamedIndividual IRI="#TN"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasPort"/>
+        <NamedIndividual IRI="#DELL_ALIENWARE_AW2518H"/>
+        <NamedIndividual IRI="#DP"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasPort"/>
+        <NamedIndividual IRI="#DELL_ALIENWARE_AW2518H"/>
+        <NamedIndividual IRI="#HDMI"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasPrice"/>
+        <NamedIndividual IRI="#DELL_ALIENWARE_AW2518H"/>
+        <NamedIndividual IRI="#23400"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasRefreshRate"/>
+        <NamedIndividual IRI="#DELL_ALIENWARE_AW2518H"/>
+        <NamedIndividual IRI="#240"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasResolution"/>
+        <NamedIndividual IRI="#DELL_ALIENWARE_AW2518H"/>
+        <NamedIndividual IRI="#1920x1080"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasRespontime"/>
+        <NamedIndividual IRI="#DELL_ALIENWARE_AW2518H"/>
+        <NamedIndividual IRI="#1ms"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasSize"/>
+        <NamedIndividual IRI="#DELL_ALIENWARE_AW2518H"/>
+        <NamedIndividual IRI="#24.5inch"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasfeatures"/>
+        <NamedIndividual IRI="#DELL_ALIENWARE_AW2518H"/>
+        <NamedIndividual IRI="#G-Sync"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasAspectratio"/>
         <NamedIndividual IRI="#Dell_Ultrasharp_U3219Q"/>
         <NamedIndividual IRI="#16:9"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasColor"/>
+        <NamedIndividual IRI="#Dell_Ultrasharp_U3219Q"/>
+        <NamedIndividual IRI="#sRGB_99percent"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="#hasPaneltype"/>
@@ -388,6 +833,51 @@
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="#hasAspectratio"/>
+        <NamedIndividual IRI="#HP_20KD"/>
+        <NamedIndividual IRI="#16:10"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasPaneltype"/>
+        <NamedIndividual IRI="#HP_20KD"/>
+        <NamedIndividual IRI="#IPS"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasPort"/>
+        <NamedIndividual IRI="#HP_20KD"/>
+        <NamedIndividual IRI="#DVi"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasPort"/>
+        <NamedIndividual IRI="#HP_20KD"/>
+        <NamedIndividual IRI="#VGA"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasPrice"/>
+        <NamedIndividual IRI="#HP_20KD"/>
+        <NamedIndividual IRI="#2650"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasRefreshRate"/>
+        <NamedIndividual IRI="#HP_20KD"/>
+        <NamedIndividual IRI="#60"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasResolution"/>
+        <NamedIndividual IRI="#HP_20KD"/>
+        <NamedIndividual IRI="#1440x900"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasRespontime"/>
+        <NamedIndividual IRI="#HP_20KD"/>
+        <NamedIndividual IRI="#8ms"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasSize"/>
+        <NamedIndividual IRI="#HP_20KD"/>
+        <NamedIndividual IRI="#19.5inch"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasAspectratio"/>
         <NamedIndividual IRI="#AOC_63908VWXA/67"/>
         <NamedIndividual IRI="#16:9"/>
     </ObjectPropertyAssertion>
@@ -430,6 +920,11 @@
         <ObjectProperty IRI="#hasRespontime"/>
         <NamedIndividual IRI="#AOC_63908VWXA/67"/>
         <NamedIndividual IRI="#4ms"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasSize"/>
+        <NamedIndividual IRI="#AOC_63908VWXA/67"/>
+        <NamedIndividual IRI="#38.5inch"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="#hasfeatures"/>
