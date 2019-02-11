@@ -1,0 +1,438 @@
+<?xml version="1.0"?>
+
+
+<!DOCTYPE Ontology [
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY xml "http://www.w3.org/XML/1998/namespace" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+]>
+
+
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://www.semanticweb.org/user/ontologies/2019/1/untitled-ontology-25"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     ontologyIRI="http://www.semanticweb.org/user/ontologies/2019/1/untitled-ontology-25">
+    <Prefix name="" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Declaration>
+        <Class IRI="#Aspectratio"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Color"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Electronic"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Feature"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Gamming"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#General"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Graphic"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Monitor"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#PC_Monitor"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Panel_Type"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Port"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Price"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#RefreshRate"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Resolution"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ResponTime"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Size"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#TV_Monitor"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasAspectratio"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasColor"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasPaneltype"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasPort"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasPrice"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasRefreshRate"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasResolution"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasRespontime"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasSize"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasfeatures"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#14000"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#144"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#16:9"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#1920x1080"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#21.5inch"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#23400"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#2560x1440"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#27inch"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#3400"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#38.5inch"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#4ms"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#5ms"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#60"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#AOC_63908VWXA/67"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#AdobeRGB_99_percents"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#BENQ_Sw2700PT"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#DVi"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Free-Sync"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#G-Sync"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#HDMI"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#IPS"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#PHILIPS_223V&amp;QHSB/67"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#USB"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#VA"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#VGA"/>
+    </Declaration>
+    <SubClassOf>
+        <Class IRI="#Gamming"/>
+        <Class IRI="#PC_Monitor"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#General"/>
+        <Class IRI="#PC_Monitor"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Graphic"/>
+        <Class IRI="#PC_Monitor"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Monitor"/>
+        <Class IRI="#Electronic"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PC_Monitor"/>
+        <Class IRI="#Monitor"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#TV_Monitor"/>
+        <Class IRI="#Monitor"/>
+    </SubClassOf>
+    <ClassAssertion>
+        <Class IRI="#Price"/>
+        <NamedIndividual IRI="#14000"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#RefreshRate"/>
+        <NamedIndividual IRI="#144"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Aspectratio"/>
+        <NamedIndividual IRI="#16:9"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Resolution"/>
+        <NamedIndividual IRI="#1920x1080"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Size"/>
+        <NamedIndividual IRI="#21.5inch"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Price"/>
+        <NamedIndividual IRI="#23400"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Resolution"/>
+        <NamedIndividual IRI="#2560x1440"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Size"/>
+        <NamedIndividual IRI="#27inch"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Price"/>
+        <NamedIndividual IRI="#3400"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Size"/>
+        <NamedIndividual IRI="#38.5inch"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#ResponTime"/>
+        <NamedIndividual IRI="#4ms"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#ResponTime"/>
+        <NamedIndividual IRI="#5ms"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#RefreshRate"/>
+        <NamedIndividual IRI="#60"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Gamming"/>
+        <NamedIndividual IRI="#AOC_63908VWXA/67"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Color"/>
+        <NamedIndividual IRI="#AdobeRGB_99_percents"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Graphic"/>
+        <NamedIndividual IRI="#BENQ_Sw2700PT"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Port"/>
+        <NamedIndividual IRI="#DVi"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Feature"/>
+        <NamedIndividual IRI="#Free-Sync"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Feature"/>
+        <NamedIndividual IRI="#G-Sync"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Port"/>
+        <NamedIndividual IRI="#HDMI"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Panel_Type"/>
+        <NamedIndividual IRI="#IPS"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#General"/>
+        <NamedIndividual IRI="#PHILIPS_223V&amp;QHSB/67"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Port"/>
+        <NamedIndividual IRI="#USB"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Panel_Type"/>
+        <NamedIndividual IRI="#VA"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Port"/>
+        <NamedIndividual IRI="#VGA"/>
+    </ClassAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasAspectratio"/>
+        <NamedIndividual IRI="#PHILIPS_223V&amp;QHSB/67"/>
+        <NamedIndividual IRI="#16:9"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasPaneltype"/>
+        <NamedIndividual IRI="#PHILIPS_223V&amp;QHSB/67"/>
+        <NamedIndividual IRI="#IPS"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasPort"/>
+        <NamedIndividual IRI="#PHILIPS_223V&amp;QHSB/67"/>
+        <NamedIndividual IRI="#HDMI"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasPort"/>
+        <NamedIndividual IRI="#PHILIPS_223V&amp;QHSB/67"/>
+        <NamedIndividual IRI="#DVi"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasPrice"/>
+        <NamedIndividual IRI="#PHILIPS_223V&amp;QHSB/67"/>
+        <NamedIndividual IRI="#3400"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasRefreshRate"/>
+        <NamedIndividual IRI="#PHILIPS_223V&amp;QHSB/67"/>
+        <NamedIndividual IRI="#60"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasResolution"/>
+        <NamedIndividual IRI="#PHILIPS_223V&amp;QHSB/67"/>
+        <NamedIndividual IRI="#1920x1080"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasRespontime"/>
+        <NamedIndividual IRI="#PHILIPS_223V&amp;QHSB/67"/>
+        <NamedIndividual IRI="#5ms"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasSize"/>
+        <NamedIndividual IRI="#PHILIPS_223V&amp;QHSB/67"/>
+        <NamedIndividual IRI="#21.5inch"/>
+    </ObjectPropertyAssertion>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasRefreshRate"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasAspectratio"/>
+        <Class IRI="#Monitor"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasColor"/>
+        <Class IRI="#Monitor"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasPaneltype"/>
+        <Class IRI="#Monitor"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasPort"/>
+        <Class IRI="#Monitor"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasPrice"/>
+        <Class IRI="#Monitor"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasRefreshRate"/>
+        <Class IRI="#Monitor"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasResolution"/>
+        <Class IRI="#Monitor"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasRespontime"/>
+        <Class IRI="#Monitor"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasSize"/>
+        <Class IRI="#Monitor"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasfeatures"/>
+        <Class IRI="#Monitor"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasAspectratio"/>
+        <Class IRI="#Aspectratio"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasColor"/>
+        <Class IRI="#Color"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasPaneltype"/>
+        <Class IRI="#Panel_Type"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasPort"/>
+        <Class IRI="#Port"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasPrice"/>
+        <Class IRI="#Price"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasRefreshRate"/>
+        <Class IRI="#RefreshRate"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasResolution"/>
+        <Class IRI="#Resolution"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasRespontime"/>
+        <Class IRI="#ResponTime"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasSize"/>
+        <Class IRI="#Size"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasfeatures"/>
+        <Class IRI="#Feature"/>
+    </ObjectPropertyRange>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 3.4.2) http://owlapi.sourceforge.net -->
+
