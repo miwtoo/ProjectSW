@@ -1,24 +1,15 @@
 <?xml version="1.0"?>
-
-
-<!DOCTYPE Ontology [
-    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
-    <!ENTITY xml "http://www.w3.org/XML/1998/namespace" >
-    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
-    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
-]>
-
-
 <Ontology xmlns="http://www.w3.org/2002/07/owl#"
      xml:base="http://www.semanticweb.org/user/ontologies/2019/1/untitled-ontology-25"
-     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
-     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      ontologyIRI="http://www.semanticweb.org/user/ontologies/2019/1/untitled-ontology-25">
-    <Prefix name="" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="" IRI="http://www.semanticweb.org/user/ontologies/2019/1/untitled-ontology-25"/>
     <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
     <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
     <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
     <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
     <Declaration>
@@ -103,6 +94,42 @@
         <ObjectProperty IRI="#hasfeatures"/>
     </Declaration>
     <Declaration>
+        <NamedIndividual IRI="#AdobeRGB_99_percents"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#DP"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#DVi"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Dell_Ultrasharp_U3219Q"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Free-Sync"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#G-Sync"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#HDMI"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#IPS"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#TN"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#USB"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#VA"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#VGA"/>
+    </Declaration>
+    <Declaration>
         <NamedIndividual IRI="#14000"/>
     </Declaration>
     <Declaration>
@@ -124,10 +151,19 @@
         <NamedIndividual IRI="#2560x1440"/>
     </Declaration>
     <Declaration>
+        <NamedIndividual IRI="#26330"/>
+    </Declaration>
+    <Declaration>
         <NamedIndividual IRI="#27inch"/>
     </Declaration>
     <Declaration>
+        <NamedIndividual IRI="#32inch"/>
+    </Declaration>
+    <Declaration>
         <NamedIndividual IRI="#3400"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#3480x2160"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#38.5inch"/>
@@ -136,46 +172,22 @@
         <NamedIndividual IRI="#4ms"/>
     </Declaration>
     <Declaration>
+        <NamedIndividual IRI="#4:3"/>
+    </Declaration>
+    <Declaration>
         <NamedIndividual IRI="#5ms"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#60"/>
     </Declaration>
     <Declaration>
+        <NamedIndividual IRI="#8ms"/>
+    </Declaration>
+    <Declaration>
         <NamedIndividual IRI="#AOC_63908VWXA/67"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#AdobeRGB_99_percents"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#BENQ_Sw2700PT"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#DVi"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#Free-Sync"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#G-Sync"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#HDMI"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#IPS"/>
-    </Declaration>
-    <Declaration>
         <NamedIndividual IRI="#PHILIPS_223V&amp;QHSB/67"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#USB"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#VA"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#VGA"/>
     </Declaration>
     <SubClassOf>
         <Class IRI="#Gamming"/>
@@ -201,6 +213,54 @@
         <Class IRI="#TV_Monitor"/>
         <Class IRI="#Monitor"/>
     </SubClassOf>
+    <ClassAssertion>
+        <Class IRI="#Color"/>
+        <NamedIndividual IRI="#AdobeRGB_99_percents"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Port"/>
+        <NamedIndividual IRI="#DP"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Port"/>
+        <NamedIndividual IRI="#DVi"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Graphic"/>
+        <NamedIndividual IRI="#Dell_Ultrasharp_U3219Q"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Feature"/>
+        <NamedIndividual IRI="#Free-Sync"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Feature"/>
+        <NamedIndividual IRI="#G-Sync"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Port"/>
+        <NamedIndividual IRI="#HDMI"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Panel_Type"/>
+        <NamedIndividual IRI="#IPS"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Panel_Type"/>
+        <NamedIndividual IRI="#TN"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Port"/>
+        <NamedIndividual IRI="#USB"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Panel_Type"/>
+        <NamedIndividual IRI="#VA"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Port"/>
+        <NamedIndividual IRI="#VGA"/>
+    </ClassAssertion>
     <ClassAssertion>
         <Class IRI="#Price"/>
         <NamedIndividual IRI="#14000"/>
@@ -230,12 +290,24 @@
         <NamedIndividual IRI="#2560x1440"/>
     </ClassAssertion>
     <ClassAssertion>
+        <Class IRI="#Price"/>
+        <NamedIndividual IRI="#26330"/>
+    </ClassAssertion>
+    <ClassAssertion>
         <Class IRI="#Size"/>
         <NamedIndividual IRI="#27inch"/>
     </ClassAssertion>
     <ClassAssertion>
+        <Class IRI="#Size"/>
+        <NamedIndividual IRI="#32inch"/>
+    </ClassAssertion>
+    <ClassAssertion>
         <Class IRI="#Price"/>
         <NamedIndividual IRI="#3400"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Resolution"/>
+        <NamedIndividual IRI="#3480x2160"/>
     </ClassAssertion>
     <ClassAssertion>
         <Class IRI="#Size"/>
@@ -246,6 +318,10 @@
         <NamedIndividual IRI="#4ms"/>
     </ClassAssertion>
     <ClassAssertion>
+        <Class IRI="#Aspectratio"/>
+        <NamedIndividual IRI="#4:3"/>
+    </ClassAssertion>
+    <ClassAssertion>
         <Class IRI="#ResponTime"/>
         <NamedIndividual IRI="#5ms"/>
     </ClassAssertion>
@@ -254,53 +330,117 @@
         <NamedIndividual IRI="#60"/>
     </ClassAssertion>
     <ClassAssertion>
+        <Class IRI="#ResponTime"/>
+        <NamedIndividual IRI="#8ms"/>
+    </ClassAssertion>
+    <ClassAssertion>
         <Class IRI="#Gamming"/>
         <NamedIndividual IRI="#AOC_63908VWXA/67"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="#Color"/>
-        <NamedIndividual IRI="#AdobeRGB_99_percents"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="#Graphic"/>
-        <NamedIndividual IRI="#BENQ_Sw2700PT"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="#Port"/>
-        <NamedIndividual IRI="#DVi"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="#Feature"/>
-        <NamedIndividual IRI="#Free-Sync"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="#Feature"/>
-        <NamedIndividual IRI="#G-Sync"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="#Port"/>
-        <NamedIndividual IRI="#HDMI"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="#Panel_Type"/>
-        <NamedIndividual IRI="#IPS"/>
     </ClassAssertion>
     <ClassAssertion>
         <Class IRI="#General"/>
         <NamedIndividual IRI="#PHILIPS_223V&amp;QHSB/67"/>
     </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="#Port"/>
-        <NamedIndividual IRI="#USB"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="#Panel_Type"/>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasAspectratio"/>
+        <NamedIndividual IRI="#Dell_Ultrasharp_U3219Q"/>
+        <NamedIndividual IRI="#16:9"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasPaneltype"/>
+        <NamedIndividual IRI="#Dell_Ultrasharp_U3219Q"/>
+        <NamedIndividual IRI="#IPS"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasPort"/>
+        <NamedIndividual IRI="#Dell_Ultrasharp_U3219Q"/>
+        <NamedIndividual IRI="#DP"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasPort"/>
+        <NamedIndividual IRI="#Dell_Ultrasharp_U3219Q"/>
+        <NamedIndividual IRI="#HDMI"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasPrice"/>
+        <NamedIndividual IRI="#Dell_Ultrasharp_U3219Q"/>
+        <NamedIndividual IRI="#26330"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasRefreshRate"/>
+        <NamedIndividual IRI="#Dell_Ultrasharp_U3219Q"/>
+        <NamedIndividual IRI="#60"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasResolution"/>
+        <NamedIndividual IRI="#Dell_Ultrasharp_U3219Q"/>
+        <NamedIndividual IRI="#3480x2160"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasRespontime"/>
+        <NamedIndividual IRI="#Dell_Ultrasharp_U3219Q"/>
+        <NamedIndividual IRI="#8ms"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasSize"/>
+        <NamedIndividual IRI="#Dell_Ultrasharp_U3219Q"/>
+        <NamedIndividual IRI="#32inch"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasAspectratio"/>
+        <NamedIndividual IRI="#AOC_63908VWXA/67"/>
+        <NamedIndividual IRI="#16:9"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasPaneltype"/>
+        <NamedIndividual IRI="#AOC_63908VWXA/67"/>
         <NamedIndividual IRI="#VA"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="#Port"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasPort"/>
+        <NamedIndividual IRI="#AOC_63908VWXA/67"/>
+        <NamedIndividual IRI="#DP"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasPort"/>
+        <NamedIndividual IRI="#AOC_63908VWXA/67"/>
+        <NamedIndividual IRI="#HDMI"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasPort"/>
+        <NamedIndividual IRI="#AOC_63908VWXA/67"/>
         <NamedIndividual IRI="#VGA"/>
-    </ClassAssertion>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasPrice"/>
+        <NamedIndividual IRI="#AOC_63908VWXA/67"/>
+        <NamedIndividual IRI="#14000"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasRefreshRate"/>
+        <NamedIndividual IRI="#AOC_63908VWXA/67"/>
+        <NamedIndividual IRI="#144"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasResolution"/>
+        <NamedIndividual IRI="#AOC_63908VWXA/67"/>
+        <NamedIndividual IRI="#1920x1080"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasRespontime"/>
+        <NamedIndividual IRI="#AOC_63908VWXA/67"/>
+        <NamedIndividual IRI="#4ms"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasfeatures"/>
+        <NamedIndividual IRI="#AOC_63908VWXA/67"/>
+        <NamedIndividual IRI="#Free-Sync"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasfeatures"/>
+        <NamedIndividual IRI="#AOC_63908VWXA/67"/>
+        <NamedIndividual IRI="#G-Sync"/>
+    </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="#hasAspectratio"/>
         <NamedIndividual IRI="#PHILIPS_223V&amp;QHSB/67"/>
@@ -314,12 +454,12 @@
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="#hasPort"/>
         <NamedIndividual IRI="#PHILIPS_223V&amp;QHSB/67"/>
-        <NamedIndividual IRI="#HDMI"/>
+        <NamedIndividual IRI="#DVi"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="#hasPort"/>
         <NamedIndividual IRI="#PHILIPS_223V&amp;QHSB/67"/>
-        <NamedIndividual IRI="#DVi"/>
+        <NamedIndividual IRI="#HDMI"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="#hasPrice"/>
@@ -434,5 +574,5 @@
 
 
 
-<!-- Generated by the OWL API (version 3.4.2) http://owlapi.sourceforge.net -->
+<!-- Generated by the OWL API (version 4.5.6.2018-09-06T00:27:41Z) https://github.com/owlcs/owlapi -->
 
