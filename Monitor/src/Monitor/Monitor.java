@@ -1,5 +1,10 @@
 package Monitor;
 
+import com.hp.hpl.jena.query.QuerySolution;
+import com.hp.hpl.jena.rdf.model.RDFNode;
+import java.nio.charset.Charset;
+import java.util.ArrayList;
+
 /*
  * To change this license header, choose License Headers in Project Properties.
  * To change this template file, choose Tools | Templates
@@ -12,12 +17,58 @@ package Monitor;
  */
 public class Monitor extends javax.swing.JFrame {
 
+    public ArrayList<String> ListComponent = new ArrayList<String>();  // for name list
+    public ArrayList<String> ListNames = new ArrayList<String>();  // for name list
     /**
      * Creates new form Monitor
      */
     public Monitor() {
         initComponents();
+        
+        try {
+            // OntModel model = OpenOWL.OpenConnectOWL();
+
+           System.out.println("Get Component"); 
+            String queryString;
+            queryString = "PREFIX ex:<http://www.semanticweb.org/user/ontologies/2019/1/untitled-ontology-25#> "
+                            +"PREFIX rdf:<http://www.w3.org/1999/02/22-rdf-syntax-ns#> "
+                            +"PREFIX rdfs:<http://www.w3.org/2000/01/rdf-schema#>"
+                            + "SELECT  (str(?x) as ?Component) "
+                            + "where { ?x rdfs:subClassOf ex:PC_Monitor"
+                            + " }";
+            System.out.println(queryString);
+
+            com.hp.hpl.jena.query.ResultSet results = OpenOWL.ExecSparQl(queryString); //all method ExecSparQl from OpenOWL class
+
+            while (results.hasNext()) {
+
+                QuerySolution soln = results.nextSolution();
+                String Component = soln.getLiteral("Component").getString();
+                //test --
+                System.out.println("Computer " + Component.toString());
+                ListComponent.add(Component.toString());
+
+                RDFNode x = soln.get("Propertyval");
+
+                String xx = String.valueOf(x);
+
+                java.nio.ByteBuffer xxx = Charset.forName("UTF-8").encode(xx);
+
+                String xs = xxx.toString();
+
+            }
+            jComboBox1.removeAllItems(); //  combobox nameList
+            for (int i = 1; i < ListComponent.size(); i++) {
+
+                jComboBox1.addItem(ListComponent.get(i).split("#")[1]);
+            }
+        } catch (Exception ex) {
+            ex.printStackTrace();
+        }
+       
     }
+    
+    
 
     /**
      * This method is called from within the constructor to initialize the form.
@@ -51,19 +102,17 @@ public class Monitor extends javax.swing.JFrame {
 
         jLabel1.setText("jLabel1");
 
-        jComboBox1.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
+        jComboBox1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jComboBox1ActionPerformed(evt);
+            }
+        });
 
-        jComboBox2.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
-
-        jComboBox3.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
-
-        jComboBox4.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
-
-        jComboBox5.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
-
-        jComboBox6.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
-
-        jComboBox7.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
+        jComboBox2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jComboBox2ActionPerformed(evt);
+            }
+        });
 
         jLabel2.setText("jLabel2");
 
@@ -205,6 +254,14 @@ public class Monitor extends javax.swing.JFrame {
         // TODO add your handling code here:
         System.out.println("Test");
     }//GEN-LAST:event_jButton1ActionPerformed
+
+    private void jComboBox1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jComboBox1ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jComboBox1ActionPerformed
+
+    private void jComboBox2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jComboBox2ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jComboBox2ActionPerformed
 
     /**
      * @param args the command line arguments
