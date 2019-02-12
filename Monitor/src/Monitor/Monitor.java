@@ -17,8 +17,16 @@ import java.util.ArrayList;
  */
 public class Monitor extends javax.swing.JFrame {
 
-    public ArrayList<String> ListComponent = new ArrayList<String>();  // for name list
-    public ArrayList<String> ListNames = new ArrayList<String>();  // for name list
+    public ArrayList<String> ListComponent = new ArrayList<String>(); 
+    public ArrayList<String> ListComponentPort = new ArrayList<String>();// for name list
+    public ArrayList<String> ListNames = new ArrayList<String>();
+    public ArrayList<String> ListComponentSize = new ArrayList<String>();
+    public ArrayList<String> ListComponentRatio = new ArrayList<String>();
+    public ArrayList<String> ListComponentPrice = new ArrayList<String>();
+
+    public ArrayList<String> ListComponeapce = new ArrayList<String>();
+    public ArrayList<String> ListComponentcoloer = new ArrayList<String>();
+    public ArrayList<String> ListComponentPanal = new ArrayList<String>();/// for name list
     /**
      * Creates new form Monitor
      */
@@ -34,7 +42,7 @@ public class Monitor extends javax.swing.JFrame {
                             +"PREFIX rdf:<http://www.w3.org/1999/02/22-rdf-syntax-ns#> "
                             +"PREFIX rdfs:<http://www.w3.org/2000/01/rdf-schema#>"
                             + "SELECT  (str(?x) as ?Component) "
-                            + "where { ?x rdfs:subClassOf ex:PC_Monitor"
+                            + "where { ?x rdfs:subClassOf ex:PC_Monitor."
                             + " }";
             System.out.println(queryString);
 
@@ -108,9 +116,20 @@ public class Monitor extends javax.swing.JFrame {
             }
         });
 
+        jComboBox2.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jComboBox2MouseClicked(evt);
+            }
+        });
         jComboBox2.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jComboBox2ActionPerformed(evt);
+            }
+        });
+
+        jComboBox3.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jComboBox3MouseClicked(evt);
             }
         });
 
@@ -260,8 +279,142 @@ public class Monitor extends javax.swing.JFrame {
     }//GEN-LAST:event_jComboBox1ActionPerformed
 
     private void jComboBox2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jComboBox2ActionPerformed
+        try {
+            // OntModel model = OpenOWL.OpenConnectOWL();
+            String type = jComboBox1.getName();
+           System.out.println("Get Component"); 
+            String queryString;
+            queryString = "PREFIX ex:<http://www.semanticweb.org/user/ontologies/2019/1/untitled-ontology-25#> "
+                            +"PREFIX rdf:<http://www.w3.org/1999/02/22-rdf-syntax-ns#> "
+                            +"PREFIX rdfs:<http://www.w3.org/2000/01/rdf-schema#>"
+                            + "SELECT ?y (str(?x) as ?Component) "
+                            + "where {?y rdf:type ex:"+type 
+                            +"ex:hasPort ?x"
+                            + " }";
+            System.out.println(queryString);
+
+            com.hp.hpl.jena.query.ResultSet results = OpenOWL.ExecSparQl(queryString); //all method ExecSparQl from OpenOWL class
+
+            while (results.hasNext()) {
+
+                QuerySolution soln = results.nextSolution();
+                String Component = soln.getLiteral("Component").getString();
+                //test --
+                System.out.println("Computer " + Component.toString());
+                ListComponent.add(Component.toString());
+
+                RDFNode x = soln.get("Propertyval");
+
+                String xx = String.valueOf(x);
+
+                java.nio.ByteBuffer xxx = Charset.forName("UTF-8").encode(xx);
+
+                String xs = xxx.toString();
+
+            }
+            jComboBox2.removeAllItems(); //  combobox nameList
+            for (int i = 1; i < ListComponent.size(); i++) {
+
+                jComboBox2.addItem(ListComponent.get(i).split("#")[1]);
+            }
+        } catch (Exception ex) {
+            ex.printStackTrace();
+        }
         // TODO add your handling code here:
     }//GEN-LAST:event_jComboBox2ActionPerformed
+
+    private void jComboBox2MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jComboBox2MouseClicked
+            try {
+            // OntModel model = OpenOWL.OpenConnectOWL();
+            ListComponentPort.clear();
+            String type = jComboBox1.getSelectedItem().toString();
+           System.out.println("Get Component"); 
+            String queryString;
+            queryString = "PREFIX ex:<http://www.semanticweb.org/user/ontologies/2019/1/untitled-ontology-25#> "
+                            +"PREFIX rdf:<http://www.w3.org/1999/02/22-rdf-syntax-ns#> "
+                            +"PREFIX rdfs:<http://www.w3.org/2000/01/rdf-schema#>"
+                            + "SELECT DISTINCT (str(?x) as ?Component) "
+                            + "where {?y rdf:type ex:"+type +""
+                            +";ex:hasPort ?x."
+                            + " }";
+            System.out.println(queryString);
+
+            com.hp.hpl.jena.query.ResultSet results = OpenOWL.ExecSparQl(queryString); //all method ExecSparQl from OpenOWL class
+
+            while (results.hasNext()) {
+
+                QuerySolution soln = results.nextSolution();
+                String Component = soln.getLiteral("Component").getString();
+                //test --
+                System.out.println("Computer " + Component.toString());
+                ListComponentPort.add(Component.toString());
+
+                RDFNode x = soln.get("Propertyval");
+
+                String xx = String.valueOf(x);
+
+                java.nio.ByteBuffer xxx = Charset.forName("UTF-8").encode(xx);
+
+                String xs = xxx.toString();
+
+            }
+            jComboBox2.removeAllItems(); //  combobox nameList
+            for (int i = 1; i < ListComponentPort.size(); i++) {
+
+                jComboBox2.addItem(ListComponentPort.get(i).split("#")[1]);
+            }
+        } catch (Exception ex) {
+            ex.printStackTrace();
+        }
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jComboBox2MouseClicked
+
+    private void jComboBox3MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jComboBox3MouseClicked
+        try {
+            // OntModel model = OpenOWL.OpenConnectOWL();
+            ListComponentSize.clear();
+            String type = jComboBox1.getSelectedItem().toString();
+            String port = jComboBox2.getSelectedItem().toString();
+           System.out.println("Get Component"); 
+            String queryString;
+            queryString = "PREFIX ex:<http://www.semanticweb.org/user/ontologies/2019/1/untitled-ontology-25#> "
+                            +"PREFIX rdf:<http://www.w3.org/1999/02/22-rdf-syntax-ns#> "
+                            +"PREFIX rdfs:<http://www.w3.org/2000/01/rdf-schema#>"
+                            + "SELECT DISTINCT (str(?x) as ?Component) "
+                            + "where {?y rdf:type ex:"+type +""
+                            +";ex:hasPort ex:"+port+";ex:hasSize ?x"
+                            + " }";
+            System.out.println(queryString);
+
+            com.hp.hpl.jena.query.ResultSet results = OpenOWL.ExecSparQl(queryString); //all method ExecSparQl from OpenOWL class
+
+            while (results.hasNext()) {
+
+                QuerySolution soln = results.nextSolution();
+                String Component = soln.getLiteral("Component").getString();
+                //test --
+                System.out.println("Computer " + Component.toString());
+                ListComponentSize.add(Component.toString());
+
+                RDFNode x = soln.get("Propertyval");
+
+                String xx = String.valueOf(x);
+
+                java.nio.ByteBuffer xxx = Charset.forName("UTF-8").encode(xx);
+
+                String xs = xxx.toString();
+
+            }
+            jComboBox3.removeAllItems(); //  combobox nameList
+            for (int i = 1; i < ListComponentSize.size(); i++) {
+
+                jComboBox3.addItem(ListComponentSize.get(i).split("#")[1]);
+            }
+        } catch (Exception ex) {
+            ex.printStackTrace();
+        }
+// TODO add your handling code here:
+    }//GEN-LAST:event_jComboBox3MouseClicked
 
     /**
      * @param args the command line arguments
