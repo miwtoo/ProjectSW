@@ -1,5 +1,5 @@
-1 . Find All Type Monitor
-
+# 1 . Find All Type Monitor
+```xml
 PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
 PREFIX owl: <http://www.w3.org/2002/07/owl#>
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
@@ -8,11 +8,12 @@ PREFIX ex: <http://www.semanticweb.org/user/ontologies/2019/1/untitled-ontology-
 
 SELECT ?subject
 WHERE { ?subject rdfs:subClassOf ex:PC_Monitor }
+```
 
-------------------------------------------------------------------------
+----------------------------------------------------
 
-2. Find Spec Monitor
-
+# 2. Find Spec Monitor
+```xml
 PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
 PREFIX owl: <http://www.w3.org/2002/07/owl#>
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
@@ -29,11 +30,9 @@ WHERE { ?monitor rdf:type ex:Gamming;
 		ex:hasResolution ex:1920x1080;
 		ex:hashasRespontime ex:4ms;
 }
+```
 
-
-
-
-
+```xml
 PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
 PREFIX owl: <http://www.w3.org/2002/07/owl#>
 PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
@@ -54,3 +53,6 @@ WHERE {
 		OPTIONAL {?name ex:hasfeatures ?features.}
 		
 }
+```
+
+
