@@ -120,13 +120,13 @@ public class MonitorContoller {
         Set<String> ListMonitorName = new HashSet<String>();
         Set<String> ListMonitor = new HashSet<String>();
 
-        
+
         try {
             // OntModel model = OpenOWL.OpenConnectOWL();
 
             System.out.println("Get Reso");
             String queryString;
-            queryString = "PREFIX ex:<http://www.semanticweb.org/user/ontologies/2019/1/untitled-ontology-25#> "
+            queryString = "PR EFIX ex:<http://www.semanticweb.org/user/ontologies/2019/1/untitled-ontology-25#> "
                     + "PREFIX rdf:<http://www.w3.org/1999/02/22-rdf-syntax-ns#> "
 
                     + "PREFIX rdfs:<http://www.w3.org/2000/01/rdf-schema#>" + "SELECT  (str(?monitor) as ?Monitor) (str(?resu) as ?Reso)"
@@ -183,5 +183,241 @@ public class MonitorContoller {
         }
         // return "test1";
     }
+
+
+    @GetMapping("/panal/{reso}")
+    public ResponseEntity<Map<String, Object>> findPanal(@PathVariable String reso) {
+        this.reso=reso;
+
+        Map<String, Object> json = new HashMap<String, Object>();
+
+        Set<String> ListMonitorImg = new HashSet<String>();
+        Set<String> ListMonitorName = new HashSet<String>();
+        Set<String> ListMonitor = new HashSet<String>();
+
+
+        try {
+            // OntModel model = OpenOWL.OpenConnectOWL();
+
+            System.out.println("Get Panal");
+            String queryString;
+            queryString = "PR EFIX ex:<http://www.semanticweb.org/user/ontologies/2019/1/untitled-ontology-25#> "
+                    + "PREFIX rdf:<http://www.w3.org/1999/02/22-rdf-syntax-ns#> "
+
+                    + "PREFIX rdfs:<http://www.w3.org/2000/01/rdf-schema#>" + "SELECT  (str(?monitor) as ?Monitor) (str(?panal) as ?Panal)"
+                    + "where {{?monitor rdf:type ex:"+type+".}"
+                    + "OPTIONAL {?monitor ex:hasResolution ex:"+reso+".}"
+                    + "OPTIONAL {?monitor ex:hasPaneltype ?panal.}"
+                    + "}";
+            //System.out.println(queryString);
+            com.hp.hpl.jena.query.ResultSet results = OpenOWL.ExecSparQl(queryString); // all method ExecSparQl from
+            // OpenOWL class
+
+
+            while (results.hasNext()) {
+
+                QuerySolution soln = results.nextSolution();
+
+                String name = soln.getLiteral("Panal").getString();
+                // test --
+                System.out.println("Panal " + name.toString().split("#")[1]);
+                ListMonitor.add(name.toString().split("#")[1]);
+
+                RDFNode x = soln.get("Propertyval");
+
+                String xx = String.valueOf(x);
+
+                java.nio.ByteBuffer xxx = Charset.forName("UTF-8").encode(xx);
+
+                String xs = xxx.toString();
+
+
+
+            }
+
+
+
+            json.put("data", ListMonitor);
+
+
+            HttpHeaders headers = new HttpHeaders();
+            headers.add("Content-Type", "application/json; charset=UTF-8");
+            return (new ResponseEntity<Map<String, Object>>(json, headers, HttpStatus.OK));
+
+
+            // ComponentList.removeAllItems(); // combobox nameList
+            // for (int i = 0; i < ListComponent.size(); i++) {
+            // // System.out.println(ListComponent.get(i));
+            // }
+        } catch (Exception ex) {
+            json.put("message", "error");
+            json.put("error", ex);
+            HttpHeaders headers = new HttpHeaders();
+            headers.add("Content-Type", "application/json; charset=UTF-8");
+            return (new ResponseEntity<Map<String, Object>>(json, headers, HttpStatus.NOT_FOUND));
+            // ex.printStackTrace();
+        }
+        // return "test1";
+    }
+
+
+
+    @GetMapping("/aspect/{panal}")
+    public ResponseEntity<Map<String, Object>> findAspect(@PathVariable String panal) {
+        this.panal=panal;
+
+        Map<String, Object> json = new HashMap<String, Object>();
+
+        Set<String> ListMonitorImg = new HashSet<String>();
+        Set<String> ListMonitorName = new HashSet<String>();
+        Set<String> ListMonitor = new HashSet<String>();
+
+
+        try {
+            // OntModel model = OpenOWL.OpenConnectOWL();
+
+            System.out.println("Get Aspect");
+            String queryString;
+            queryString = "PR EFIX ex:<http://www.semanticweb.org/user/ontologies/2019/1/untitled-ontology-25#> "
+                    + "PREFIX rdf:<http://www.w3.org/1999/02/22-rdf-syntax-ns#> "
+
+                    + "PREFIX rdfs:<http://www.w3.org/2000/01/rdf-schema#>" + "SELECT  (str(?monitor) as ?Monitor) (str(?aspect) as ?Aspect)"
+                    + "where {{?monitor rdf:type ex:"+type+".}"
+                    + "OPTIONAL {?monitor ex:hasResolution ex:"+reso+".}"
+                    + "OPTIONAL {?monitor ex:hasPaneltype ex:"+panal+".}"
+                    + "OPTIONAL {?monitor ex:hasAspectratio ?aspect.}"
+                    + "}";
+            //System.out.println(queryString);
+            com.hp.hpl.jena.query.ResultSet results = OpenOWL.ExecSparQl(queryString); // all method ExecSparQl from
+            // OpenOWL class
+
+
+            while (results.hasNext()) {
+
+                QuerySolution soln = results.nextSolution();
+
+                String name = soln.getLiteral("Aspect").getString();
+                // test --
+                System.out.println("Aspect " + name.toString().split("#")[1]);
+                ListMonitor.add(name.toString().split("#")[1]);
+
+                RDFNode x = soln.get("Propertyval");
+
+                String xx = String.valueOf(x);
+
+                java.nio.ByteBuffer xxx = Charset.forName("UTF-8").encode(xx);
+
+                String xs = xxx.toString();
+
+
+
+            }
+
+
+
+            json.put("data", ListMonitor);
+
+
+            HttpHeaders headers = new HttpHeaders();
+            headers.add("Content-Type", "application/json; charset=UTF-8");
+            return (new ResponseEntity<Map<String, Object>>(json, headers, HttpStatus.OK));
+
+
+            // ComponentList.removeAllItems(); // combobox nameList
+            // for (int i = 0; i < ListComponent.size(); i++) {
+            // // System.out.println(ListComponent.get(i));
+            // }
+        } catch (Exception ex) {
+            json.put("message", "error");
+            json.put("error", ex);
+            HttpHeaders headers = new HttpHeaders();
+            headers.add("Content-Type", "application/json; charset=UTF-8");
+            return (new ResponseEntity<Map<String, Object>>(json, headers, HttpStatus.NOT_FOUND));
+            // ex.printStackTrace();
+        }
+        // return "test1";
+    }
+
+
+    @GetMapping("/port/{aspect}")
+    public ResponseEntity<Map<String, Object>> findPort(@PathVariable String aspect) {
+        this.aspect=aspect;
+
+        Map<String, Object> json = new HashMap<String, Object>();
+
+        Set<String> ListMonitorImg = new HashSet<String>();
+        Set<String> ListMonitorName = new HashSet<String>();
+        Set<String> ListMonitor = new HashSet<String>();
+
+
+        try {
+            // OntModel model = OpenOWL.OpenConnectOWL();
+
+            System.out.println("Get Aspect");
+            String queryString;
+            queryString = "PR EFIX ex:<http://www.semanticweb.org/user/ontologies/2019/1/untitled-ontology-25#> "
+                    + "PREFIX rdf:<http://www.w3.org/1999/02/22-rdf-syntax-ns#> "
+
+                    + "PREFIX rdfs:<http://www.w3.org/2000/01/rdf-schema#>" + "SELECT  (str(?monitor) as ?Monitor) (str(?port) as ?Port)"
+                    + "where {{?monitor rdf:type ex:"+type+".}"
+                    + "OPTIONAL {?monitor ex:hasResolution ex:"+reso+".}"
+                    + "OPTIONAL {?monitor ex:hasPaneltype ex:"+panal+".}"
+                    + "OPTIONAL {?monitor ex:hasAspectratio ex:"+aspect+".}"
+                    + "OPTIONAL {?monitor ex:hasPort ?port .}"
+                    + "}";
+            //System.out.println(queryString);
+            com.hp.hpl.jena.query.ResultSet results = OpenOWL.ExecSparQl(queryString); // all method ExecSparQl from
+            // OpenOWL class
+
+
+            while (results.hasNext()) {
+
+                QuerySolution soln = results.nextSolution();
+
+                String name = soln.getLiteral("Port").getString();
+                // test --
+                System.out.println("Port " + name.toString().split("#")[1]);
+                ListMonitor.add(name.toString().split("#")[1]);
+
+                RDFNode x = soln.get("Propertyval");
+
+                String xx = String.valueOf(x);
+
+                java.nio.ByteBuffer xxx = Charset.forName("UTF-8").encode(xx);
+
+                String xs = xxx.toString();
+
+
+
+            }
+
+
+
+            json.put("data", ListMonitor);
+
+
+            HttpHeaders headers = new HttpHeaders();
+            headers.add("Content-Type", "application/json; charset=UTF-8");
+            return (new ResponseEntity<Map<String, Object>>(json, headers, HttpStatus.OK));
+
+
+            // ComponentList.removeAllItems(); // combobox nameList
+            // for (int i = 0; i < ListComponent.size(); i++) {
+            // // System.out.println(ListComponent.get(i));
+            // }
+        } catch (Exception ex) {
+            json.put("message", "error");
+            json.put("error", ex);
+            HttpHeaders headers = new HttpHeaders();
+            headers.add("Content-Type", "application/json; charset=UTF-8");
+            return (new ResponseEntity<Map<String, Object>>(json, headers, HttpStatus.NOT_FOUND));
+            // ex.printStackTrace();
+        }
+        // return "test1";
+    }
+
+
+
+
 
 }
