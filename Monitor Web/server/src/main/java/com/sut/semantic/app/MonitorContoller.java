@@ -394,7 +394,7 @@ public class MonitorContoller {
                     + "OPTIONAL {?monitor ex:hasResolution ex:" + reso + ".}"
                     + "OPTIONAL {?monitor ex:hasPaneltype ex:" + panal + ".}"
                     + "OPTIONAL {?monitor ex:hasAspectratio ex:" + aspect + ".}"
-                    + "OPTIONAL {?monitor ex:hasPort ?"+port+" .}"
+                    + "OPTIONAL {?monitor ex:hasPort ex:"+port+" .}"
                     + "OPTIONAL {?monitor ex:hasRefreshRate ?refreshRate.}"
                     + "}";
             // System.out.println(queryString);
@@ -446,8 +446,8 @@ public class MonitorContoller {
                     + "OPTIONAL {?monitor ex:hasResolution ex:" + reso + ".}"
                     + "OPTIONAL {?monitor ex:hasPaneltype ex:" + panal + ".}"
                     + "OPTIONAL {?monitor ex:hasAspectratio ex:" + aspect + ".}"
-                    + "OPTIONAL {?monitor ex:hasPort ?"+port+" .}"
-                    + "OPTIONAL {?monitor ex:hasRefreshRate ?"+refresh+".}"
+                    + "OPTIONAL {?monitor ex:hasPort ex:"+port+" .}"
+                    + "OPTIONAL {?monitor ex:hasRefreshRate ex:"+refresh+".}"
                     + "OPTIONAL {?monitor ex:hasRespontime ?respontime.}"
                     + "}";
             // System.out.println(queryString);
@@ -500,8 +500,8 @@ public class MonitorContoller {
                     + "OPTIONAL {?monitor ex:hasPaneltype ex:" + panal + ".}"
                     + "OPTIONAL {?monitor ex:hasAspectratio ex:" + aspect + ".}"
                     + "OPTIONAL {?monitor ex:hasPort ?"+port+" .}"
-                    + "OPTIONAL {?monitor ex:hasRefreshRate ?"+refresh+".}"
-                    + "OPTIONAL {?monitor ex:hasRespontime ?"+respon+".}"
+                    + "OPTIONAL {?monitor ex:hasRefreshRate ex:"+refresh+".}"
+                    + "OPTIONAL {?monitor ex:hasRespontime ex:"+respon+".}"
                     + "OPTIONAL {?monitor ex:hasSize ?size.}"
                     + "}";
             // System.out.println(queryString);
@@ -553,10 +553,10 @@ public class MonitorContoller {
                     + "OPTIONAL {?monitor ex:hasResolution ex:" + reso + ".}"
                     + "OPTIONAL {?monitor ex:hasPaneltype ex:" + panal + ".}"
                     + "OPTIONAL {?monitor ex:hasAspectratio ex:" + aspect + ".}"
-                    + "OPTIONAL {?monitor ex:hasPort ?"+port+" .}"
-                    + "OPTIONAL {?monitor ex:hasRefreshRate ?"+refresh+".}"
-                    + "OPTIONAL {?monitor ex:hasRespontime ?"+respon+".}"
-                    + "OPTIONAL {?monitor ex:hasSize ?"+size+".}"
+                    + "OPTIONAL {?monitor ex:hasPort ex:"+port+" .}"
+                    + "OPTIONAL {?monitor ex:hasRefreshRate ex:"+refresh+".}"
+                    + "OPTIONAL {?monitor ex:hasRespontime ex:"+respon+".}"
+                    + "OPTIONAL {?monitor ex:hasSize ex:"+size+".}"
                     + "OPTIONAL {?monitor ex:hasfeatures ?features.}"
                     + "}";
             // System.out.println(queryString);
@@ -608,11 +608,11 @@ public class MonitorContoller {
                     + "OPTIONAL {?monitor ex:hasResolution ex:" + reso + ".}"
                     + "OPTIONAL {?monitor ex:hasPaneltype ex:" + panal + ".}"
                     + "OPTIONAL {?monitor ex:hasAspectratio ex:" + aspect + ".}"
-                    + "OPTIONAL {?monitor ex:hasPort ?"+port+" .}"
-                    + "OPTIONAL {?monitor ex:hasRefreshRate ?"+refresh+".}"
-                    + "OPTIONAL {?monitor ex:hasRespontime ?"+respon+".}"
-                    + "OPTIONAL {?monitor ex:hasSize ?"+size+".}"
-                    + "OPTIONAL {?monitor ex:hasfeatures ?"+feature+".}"
+                    + "OPTIONAL {?monitor ex:hasPort ex:"+port+" .}"
+                    + "OPTIONAL {?monitor ex:hasRefreshRate ex:"+refresh+".}"
+                    + "OPTIONAL {?monitor ex:hasRespontime ex:"+respon+".}"
+                    + "OPTIONAL {?monitor ex:hasSize ex:"+size+".}"
+                    + "OPTIONAL {?monitor ex:hasfeatures ex:"+feature+".}"
                     + "OPTIONAL {?monitor ex:hasColor ?color.}"
                     + "}";
             // System.out.println(queryString);
@@ -664,12 +664,12 @@ public class MonitorContoller {
                     + "OPTIONAL {?monitor ex:hasResolution ex:" + reso + ".}"
                     + "OPTIONAL {?monitor ex:hasPaneltype ex:" + panal + ".}"
                     + "OPTIONAL {?monitor ex:hasAspectratio ex:" + aspect + ".}"
-                    + "OPTIONAL {?monitor ex:hasPort ?"+port+" .}"
-                    + "OPTIONAL {?monitor ex:hasRefreshRate ?"+refresh+".}"
-                    + "OPTIONAL {?monitor ex:hasRespontime ?"+respon+".}"
-                    + "OPTIONAL {?monitor ex:hasSize ?"+size+".}"
-                    + "OPTIONAL {?monitor ex:hasfeatures ?"+feature+".}"
-                    + "OPTIONAL {?monitor ex:hasColor ?"+color+".}"
+                    + "OPTIONAL {?monitor ex:hasPort ex:"+port+" .}"
+                    + "OPTIONAL {?monitor ex:hasRefreshRate ex:"+refresh+".}"
+                    + "OPTIONAL {?monitor ex:hasRespontime ex:"+respon+".}"
+                    + "OPTIONAL {?monitor ex:hasSize ex:"+size+".}"
+                    + "OPTIONAL {?monitor ex:hasfeatures ex:"+feature+".}"
+                    + "OPTIONAL {?monitor ex:hasColor ex:"+color+".}"
                     + "OPTIONAL {?monitor ex:hasPrice ?price.}"
                     + "}";
             // System.out.println(queryString);
