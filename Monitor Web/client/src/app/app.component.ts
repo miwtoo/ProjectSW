@@ -14,7 +14,7 @@ export class AppComponent {
     type:String
   };
 
-  
+  result:any
 
   constructor(private http: HttpClient) { }
 
@@ -39,7 +39,20 @@ export class AppComponent {
   
 
   find(){
-    
+    this.http.get("http://localhost:8080/api/" + this.monitor.type).subscribe(
+      (data:any) => {
+        console.log("GET Request is successful ", data);
+        this.result = data.data;
+        
+        console.log(this.result);
+        
+      },
+      error => {
+        console.log("Error", error);
+        alert("ผิดพลาด " + error)
+      }
+
+    );
   }
 
 

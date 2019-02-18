@@ -27,3 +27,8 @@
   .example-selected-value {
     margin: 15px 0;
   }
+
+  .example-card {
+    width: 300px;
+    height: 300px;
+  }

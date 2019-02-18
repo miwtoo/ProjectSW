@@ -38,6 +38,7 @@ import {MatTableModule} from '@angular/material/table';
 import {MatSortModule} from '@angular/material/sort';
 import {MatPaginatorModule} from '@angular/material/paginator';
 import {MatBadgeModule} from '@angular/material/badge';
+import { FlexLayoutModule } from '@angular/flex-layout';
 
 @NgModule({
   declarations: [
@@ -80,6 +81,7 @@ import {MatBadgeModule} from '@angular/material/badge';
     MatSortModule,
     MatPaginatorModule,
     MatBadgeModule,
+    FlexLayoutModule 
   ],
   providers: [],
   bootstrap: [AppComponent]
