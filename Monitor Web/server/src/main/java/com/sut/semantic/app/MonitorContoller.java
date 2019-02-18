@@ -501,7 +501,7 @@ public class MonitorContoller {
                     + "OPTIONAL {?monitor ex:hasAspectratio ex:" + aspect + ".}"
                     + "OPTIONAL {?monitor ex:hasPort ?"+port+" .}"
                     + "OPTIONAL {?monitor ex:hasRefreshRate ?"+refresh+".}"
-                    + "OPTIONAL {?monitor ex:hasRespontime ?"+refresh+".}"
+                    + "OPTIONAL {?monitor ex:hasRespontime ?"+respon+".}"
                     + "OPTIONAL {?monitor ex:hasSize ?size.}"
                     + "}";
             // System.out.println(queryString);
@@ -555,7 +555,7 @@ public class MonitorContoller {
                     + "OPTIONAL {?monitor ex:hasAspectratio ex:" + aspect + ".}"
                     + "OPTIONAL {?monitor ex:hasPort ?"+port+" .}"
                     + "OPTIONAL {?monitor ex:hasRefreshRate ?"+refresh+".}"
-                    + "OPTIONAL {?monitor ex:hasRespontime ?"+refresh+".}"
+                    + "OPTIONAL {?monitor ex:hasRespontime ?"+respon+".}"
                     + "OPTIONAL {?monitor ex:hasSize ?"+size+".}"
                     + "OPTIONAL {?monitor ex:hasfeatures ?features.}"
                     + "}";
@@ -610,7 +610,7 @@ public class MonitorContoller {
                     + "OPTIONAL {?monitor ex:hasAspectratio ex:" + aspect + ".}"
                     + "OPTIONAL {?monitor ex:hasPort ?"+port+" .}"
                     + "OPTIONAL {?monitor ex:hasRefreshRate ?"+refresh+".}"
-                    + "OPTIONAL {?monitor ex:hasRespontime ?"+refresh+".}"
+                    + "OPTIONAL {?monitor ex:hasRespontime ?"+respon+".}"
                     + "OPTIONAL {?monitor ex:hasSize ?"+size+".}"
                     + "OPTIONAL {?monitor ex:hasfeatures ?"+feature+".}"
                     + "OPTIONAL {?monitor ex:hasColor ?color.}"
@@ -666,7 +666,7 @@ public class MonitorContoller {
                     + "OPTIONAL {?monitor ex:hasAspectratio ex:" + aspect + ".}"
                     + "OPTIONAL {?monitor ex:hasPort ?"+port+" .}"
                     + "OPTIONAL {?monitor ex:hasRefreshRate ?"+refresh+".}"
-                    + "OPTIONAL {?monitor ex:hasRespontime ?"+refresh+".}"
+                    + "OPTIONAL {?monitor ex:hasRespontime ?"+respon+".}"
                     + "OPTIONAL {?monitor ex:hasSize ?"+size+".}"
                     + "OPTIONAL {?monitor ex:hasfeatures ?"+feature+".}"
                     + "OPTIONAL {?monitor ex:hasColor ?"+color+".}"
