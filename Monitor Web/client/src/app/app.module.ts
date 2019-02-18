@@ -40,6 +40,7 @@ import {MatPaginatorModule} from '@angular/material/paginator';
 import {MatBadgeModule} from '@angular/material/badge';
 import { FlexLayoutModule } from '@angular/flex-layout';
 
+
 @NgModule({
   declarations: [
     AppComponent
@@ -82,6 +83,7 @@ import { FlexLayoutModule } from '@angular/flex-layout';
     MatPaginatorModule,
     MatBadgeModule,
     FlexLayoutModule 
+    
   ],
   providers: [],
   bootstrap: [AppComponent]
