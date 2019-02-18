@@ -5,7 +5,7 @@
       <mat-icon>menu</mat-icon>
     </button>
     <mat-icon>video_label</mat-icon>
-    <span>Monitor</span>
+    <span>MonitorPC</span>
   </mat-toolbar-row>
 
 </mat-toolbar>
@@ -15,22 +15,228 @@
       <mat-expansion-panel (opened)="panelOpenState = true" (closed)="panelOpenState = false">
         <mat-expansion-panel-header>
           <mat-panel-title>
-            Type
+            เลือก MonitorPC ที่เหมาะสมกับคุณ
           </mat-panel-title>
-          <mat-panel-description>
-            เลือกประเภทของจอ
-          </mat-panel-description>
+         
         </mat-expansion-panel-header>
-        <mat-radio-group class="example-radio-group" [(ngModel)]="monitor.type">
-          <mat-radio-button class="example-radio-button" *ngFor="let type of typeList" [value]="type">
-            {{type}}
-          </mat-radio-button>
-        </mat-radio-group>
-        <div class="example-selected-value"> {{monitor.type}}</div>
-      </mat-expansion-panel>
+       
 
+
+
+
+          <mat-form-field class='full-width'>
+            <mat-select placeholder="ประเภท" required name = "type" [(ngModel)]="monitor.type">
+            <mat-option  *ngFor="let type of typeList" [value]="type">
+      {{type}}
+          </mat-option>
+        </mat-select>
+        </mat-form-field>
+
+        &nbsp;
+        <button mat-flat-button color="primary" (click)="resotoggle()" id="bt">
+          {{buttonName}}
+      </button>
+
+      <br>
+
+        <ng-container *ngIf ="select">
+
+        <mat-form-field class='full-width'>
+          <mat-select placeholder="Resolution" required name = "reso" [(ngModel)]="monitor.reso">
+          <mat-option  *ngFor="let reso of resoList" [value]="reso">
+    {{reso}}
+        </mat-option>
+      </mat-select>
+      </mat-form-field>
+        
+        
+        
+
+
+
+        &nbsp;
+        <button mat-flat-button color="primary" (click)="toggle1()" id="bt">
+          {{buttonName1}}
+      </button>
+
+      <br>
+</ng-container>
+        <ng-container *ngIf ="select1&&select">
+
+        <mat-form-field class='full-width'>
+          <mat-select placeholder="Panal Type" required name = "type" [(ngModel)]="monitor.type">
+          <mat-option  *ngFor="let type of typeList" [value]="type">
+    {{type}}
+        </mat-option>
+      </mat-select>
+      </mat-form-field>
+        
+
+
+        &nbsp;
+        <button mat-flat-button color="primary" (click)="toggle2()" id="bt">
+          {{buttonName2}}
+      </button>
+
+      <br>
+</ng-container>
+        <ng-container *ngIf ="select2&&select1&&select">
+
+        <mat-form-field class='full-width'>
+          <mat-select placeholder="Aspect Ratio" required name = "type" [(ngModel)]="monitor.type">
+          <mat-option  *ngFor="let type of typeList" [value]="type">
+    {{type}}
+        </mat-option>
+      </mat-select>
+      </mat-form-field>
+       
+
+        &nbsp;
+        <button mat-flat-button color="primary" (click)="toggle3()" id="bt">
+          {{buttonName3}}
+      </button>
+
+      <br>
+ </ng-container>
+        <ng-container *ngIf ="select3&&select2&&select1&&select">
+
+        <mat-form-field class='full-width'>
+          <mat-select placeholder="Port" required name = "type" [(ngModel)]="monitor.type">
+          <mat-option  *ngFor="let type of typeList" [value]="type">
+    {{type}}
+        </mat-option>
+      </mat-select>
+      </mat-form-field>
+      
+
+
+
+        &nbsp;
+        <button mat-flat-button color="primary" (click)="toggle4()" id="bt">
+          {{buttonName4}}
+      </button>
+
+      <br>
+  </ng-container>
+        <ng-container *ngIf ="select4&&select3&&select2&&select1&&select">
+
+        <mat-form-field class='full-width'>
+          <mat-select placeholder="Refresh Rate" required name = "type" [(ngModel)]="monitor.type">
+          <mat-option  *ngFor="let type of typeList" [value]="type">
+    {{type}}
+        </mat-option>
+      </mat-select>
+      </mat-form-field>
+        
+
+
+        &nbsp;
+        <button mat-flat-button color="primary" (click)="toggle5()" id="bt">
+          {{buttonName5}}
+      </button>
+
+      <br>
+</ng-container>
+        <ng-container *ngIf ="select5&&select4&&select3&&select2&&select1&&select">
+
+        <mat-form-field class='full-width'>
+          <mat-select placeholder="Respon Time" required name = "type" [(ngModel)]="monitor.type">
+          <mat-option  *ngFor="let type of typeList" [value]="type">
+    {{type}}
+        </mat-option>
+      </mat-select>
+      </mat-form-field>
+        
+
+
+        &nbsp;
+        <button mat-flat-button color="primary" (click)="toggle6()" id="bt">
+          {{buttonName6}}
+      </button>
+
+      <br>
+</ng-container>
+        <ng-container *ngIf ="select6&&select5&&select4&&select3&&select2&&select1&&select">
+
+        <mat-form-field class='full-width'>
+          <mat-select placeholder="Size" required name = "type" [(ngModel)]="monitor.type">
+          <mat-option  *ngFor="let type of typeList" [value]="type">
+    {{type}}
+        </mat-option>
+      </mat-select>
+      </mat-form-field>
+       
+
+        &nbsp;
+        <button mat-flat-button color="primary" (click)="toggle7()" id="bt">
+          {{buttonName7}}
+      </button>
+
+      <br>
+ </ng-container>
+        <ng-container *ngIf ="select7&&select6&&select5&&select4&&select3&&select2&&select1&&select">
+
+        <mat-form-field class='full-width'>
+          <mat-select placeholder="Feature" required name = "type" [(ngModel)]="monitor.type">
+          <mat-option  *ngFor="let type of typeList" [value]="type">
+    {{type}}
+        </mat-option>
+      </mat-select>
+      </mat-form-field>
+      
+
+
+        &nbsp;
+        <button mat-flat-button color="primary" (click)="toggle8()" id="bt">
+          {{buttonName8}}
+      </button>
+
+      <br>
+  </ng-container>
+        <ng-container *ngIf ="select8&&select7&&select6&&select5&&select4&&select3&&select2&&select1&&select">
+
+        <mat-form-field class='full-width'>
+          <mat-select placeholder="Color" required name = "type" [(ngModel)]="monitor.type">
+          <mat-option  *ngFor="let type of typeList" [value]="type">
+    {{type}}
+        </mat-option>
+      </mat-select>
+      </mat-form-field>
+     
+
+
+      &nbsp;
+      <button mat-flat-button color="primary" (click)="toggle9()" id="bt">
+        {{buttonName9}}
+    </button>
+
+    <br>
+</ng-container>
+      <ng-container *ngIf ="select9&&select8&&select7&&select6&&select5&&select4&&select3&&select2&&select1&&select">
+
+      <mat-form-field class='full-width'>
+        <mat-select placeholder="Price" required name = "type" [(ngModel)]="monitor.type">
+        <mat-option  *ngFor="let type of typeList" [value]="type">
+  {{type}}
+      </mat-option>
+    </mat-select>
+    </mat-form-field>
+   
+    &nbsp;
+    <button mat-flat-button color="primary" (click)="toggle10()" id="bt">
+      {{buttonName10}}
+  </button>
+      </ng-container>
+      <br>
+
+      <ng-container *ngIf ="select10&&select9&&select8&&select7&&select6&&select5&&select4&&select3&&select2&&select1&&select">
+
+        <button mat-flat-button color="primary" (click)="find()">ค้นหา</button>
+        </ng-container>
+      
+    </mat-expansion-panel> 
     </mat-accordion>
-    <button mat-flat-button color="primary" (click)="find()">ค้นหา</button>
+    
   </mat-drawer>
 
   
