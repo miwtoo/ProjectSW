@@ -147,6 +147,13 @@ public class MonitorContoller {
                 System.out.println("Reso " + name.toString().split("#")[1]);
                 ListMonitor.add(name.toString().split("#")[1]);
 
+                RDFNode x = soln.get("Propertyval");
+
+                String xx = String.valueOf(x);
+
+                java.nio.ByteBuffer xxx = Charset.forName("UTF-8").encode(xx);
+
+                String xs = xxx.toString();
 
 
 
