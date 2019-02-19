@@ -262,6 +262,7 @@
         <untitled-ontology-25:hasResolution rdf:resource="http://www.semanticweb.org/user/ontologies/2019/1/untitled-ontology-25#1366x768"/>
         <untitled-ontology-25:hasRespontime rdf:resource="http://www.semanticweb.org/user/ontologies/2019/1/untitled-ontology-25#5ms"/>
         <untitled-ontology-25:hasSize rdf:resource="http://www.semanticweb.org/user/ontologies/2019/1/untitled-ontology-25#18.5inch"/>
+        <untitled-ontology-25:hasfeatures rdf:resource="http://www.semanticweb.org/user/ontologies/2019/1/untitled-ontology-25#No_Future"/>
         <rdfs:seeAlso>https://www.jib.co.th/img_master/product/original/20190102094947_22451_235_1.jpg</rdfs:seeAlso>
     </owl:NamedIndividual>
     
@@ -281,6 +282,7 @@
         <untitled-ontology-25:hasResolution rdf:resource="http://www.semanticweb.org/user/ontologies/2019/1/untitled-ontology-25#3840x2160"/>
         <untitled-ontology-25:hasRespontime rdf:resource="http://www.semanticweb.org/user/ontologies/2019/1/untitled-ontology-25#5ms"/>
         <untitled-ontology-25:hasSize rdf:resource="http://www.semanticweb.org/user/ontologies/2019/1/untitled-ontology-25#32inch"/>
+        <untitled-ontology-25:hasfeatures rdf:resource="http://www.semanticweb.org/user/ontologies/2019/1/untitled-ontology-25#No_Future"/>
         <rdfs:seeAlso>https://www.asus.com/media/global/products/5UiTdkpawZuKd9od/P_setting_fff_1_90_end_500.png</rdfs:seeAlso>
     </owl:NamedIndividual>
     
@@ -328,6 +330,7 @@
         <untitled-ontology-25:hasResolution rdf:resource="http://www.semanticweb.org/user/ontologies/2019/1/untitled-ontology-25#3840x2160"/>
         <untitled-ontology-25:hasRespontime rdf:resource="http://www.semanticweb.org/user/ontologies/2019/1/untitled-ontology-25#4ms"/>
         <untitled-ontology-25:hasSize rdf:resource="http://www.semanticweb.org/user/ontologies/2019/1/untitled-ontology-25#32inch"/>
+        <untitled-ontology-25:hasfeatures rdf:resource="http://www.semanticweb.org/user/ontologies/2019/1/untitled-ontology-25#No_Future"/>
         <rdfs:seeAlso>https://jib.co.th/img_master/product/original/20181227094624_25367_235_1.jpg</rdfs:seeAlso>
     </owl:NamedIndividual>
     
@@ -391,6 +394,7 @@
         <untitled-ontology-25:hasResolution rdf:resource="http://www.semanticweb.org/user/ontologies/2019/1/untitled-ontology-25#3480x2160"/>
         <untitled-ontology-25:hasRespontime rdf:resource="http://www.semanticweb.org/user/ontologies/2019/1/untitled-ontology-25#8ms"/>
         <untitled-ontology-25:hasSize rdf:resource="http://www.semanticweb.org/user/ontologies/2019/1/untitled-ontology-25#32inch"/>
+        <untitled-ontology-25:hasfeatures rdf:resource="http://www.semanticweb.org/user/ontologies/2019/1/untitled-ontology-25#No_Future"/>
         <rdfs:seeAlso>https://i.dell.com/is/image/DellContent//content/dam/global-site-design/product_images/peripherals/output_devices/dell/monitors/u_series/u3219q/global_spi/monitor-u3219q-campaign-hero-504x350-ng.psd?fmt=jpg</rdfs:seeAlso>
     </owl:NamedIndividual>
     
@@ -425,6 +429,7 @@
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2019/1/untitled-ontology-25#HP_20KD">
         <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2019/1/untitled-ontology-25#General"/>
         <untitled-ontology-25:hasAspectratio rdf:resource="http://www.semanticweb.org/user/ontologies/2019/1/untitled-ontology-25#16:10"/>
+        <untitled-ontology-25:hasColor rdf:resource="http://www.semanticweb.org/user/ontologies/2019/1/untitled-ontology-25#No_Color"/>
         <untitled-ontology-25:hasPaneltype rdf:resource="http://www.semanticweb.org/user/ontologies/2019/1/untitled-ontology-25#IPS"/>
         <untitled-ontology-25:hasPort rdf:resource="http://www.semanticweb.org/user/ontologies/2019/1/untitled-ontology-25#DVi"/>
         <untitled-ontology-25:hasPort rdf:resource="http://www.semanticweb.org/user/ontologies/2019/1/untitled-ontology-25#VGA"/>
@@ -433,6 +438,7 @@
         <untitled-ontology-25:hasResolution rdf:resource="http://www.semanticweb.org/user/ontologies/2019/1/untitled-ontology-25#1440x900"/>
         <untitled-ontology-25:hasRespontime rdf:resource="http://www.semanticweb.org/user/ontologies/2019/1/untitled-ontology-25#8ms"/>
         <untitled-ontology-25:hasSize rdf:resource="http://www.semanticweb.org/user/ontologies/2019/1/untitled-ontology-25#19.5inch"/>
+        <untitled-ontology-25:hasfeatures rdf:resource="http://www.semanticweb.org/user/ontologies/2019/1/untitled-ontology-25#No_Future"/>
         <rdfs:seeAlso>https://jib.co.th/img_master/product/original/20181115144738_22145_235_1.jpg</rdfs:seeAlso>
     </owl:NamedIndividual>
     
@@ -450,6 +456,22 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2019/1/untitled-ontology-25#NTSC_72percent">
         <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2019/1/untitled-ontology-25#Color"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2019/1/untitled-ontology-25#No_Color -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2019/1/untitled-ontology-25#No_Color">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2019/1/untitled-ontology-25#Color"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2019/1/untitled-ontology-25#No_Future -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2019/1/untitled-ontology-25#No_Future">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2019/1/untitled-ontology-25#Feature"/>
     </owl:NamedIndividual>
     
 
@@ -785,6 +807,7 @@
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2019/1/untitled-ontology-25#AOC_G3908VWXA/67">
         <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2019/1/untitled-ontology-25#Gaming"/>
         <untitled-ontology-25:hasAspectratio rdf:resource="http://www.semanticweb.org/user/ontologies/2019/1/untitled-ontology-25#16:9"/>
+        <untitled-ontology-25:hasColor rdf:resource="http://www.semanticweb.org/user/ontologies/2019/1/untitled-ontology-25#No_Color"/>
         <untitled-ontology-25:hasPaneltype rdf:resource="http://www.semanticweb.org/user/ontologies/2019/1/untitled-ontology-25#VA"/>
         <untitled-ontology-25:hasPort rdf:resource="http://www.semanticweb.org/user/ontologies/2019/1/untitled-ontology-25#DP"/>
         <untitled-ontology-25:hasPort rdf:resource="http://www.semanticweb.org/user/ontologies/2019/1/untitled-ontology-25#HDMI"/>
@@ -806,6 +829,7 @@
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2019/1/untitled-ontology-25#PHILIPS_223V&amp;QHSB/67">
         <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2019/1/untitled-ontology-25#General"/>
         <untitled-ontology-25:hasAspectratio rdf:resource="http://www.semanticweb.org/user/ontologies/2019/1/untitled-ontology-25#16:9"/>
+        <untitled-ontology-25:hasColor rdf:resource="http://www.semanticweb.org/user/ontologies/2019/1/untitled-ontology-25#No_Color"/>
         <untitled-ontology-25:hasPaneltype rdf:resource="http://www.semanticweb.org/user/ontologies/2019/1/untitled-ontology-25#IPS"/>
         <untitled-ontology-25:hasPort rdf:resource="http://www.semanticweb.org/user/ontologies/2019/1/untitled-ontology-25#DVi"/>
         <untitled-ontology-25:hasPort rdf:resource="http://www.semanticweb.org/user/ontologies/2019/1/untitled-ontology-25#HDMI"/>
@@ -814,6 +838,7 @@
         <untitled-ontology-25:hasResolution rdf:resource="http://www.semanticweb.org/user/ontologies/2019/1/untitled-ontology-25#1920x1080"/>
         <untitled-ontology-25:hasRespontime rdf:resource="http://www.semanticweb.org/user/ontologies/2019/1/untitled-ontology-25#5ms"/>
         <untitled-ontology-25:hasSize rdf:resource="http://www.semanticweb.org/user/ontologies/2019/1/untitled-ontology-25#21.5inch"/>
+        <untitled-ontology-25:hasfeatures rdf:resource="http://www.semanticweb.org/user/ontologies/2019/1/untitled-ontology-25#No_Future"/>
         <rdfs:seeAlso>https://images.philips.com/is/image/PhilipsConsumer/226V6QSB6_67-IMS-th_TH?$jpglarge$&amp;wid=700</rdfs:seeAlso>
     </owl:NamedIndividual>
 </rdf:RDF>
