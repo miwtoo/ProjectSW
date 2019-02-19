@@ -64,9 +64,9 @@
         <ng-container *ngIf ="select1&&select">
 
         <mat-form-field class='full-width'>
-          <mat-select placeholder="Panal Type" required name = "type" [(ngModel)]="monitor.type">
-          <mat-option  *ngFor="let type of typeList" [value]="type">
-    {{type}}
+          <mat-select placeholder="Panal Type" required name = "panal" [(ngModel)]="monitor.panal">
+          <mat-option  *ngFor="let panal of panalList" [value]="panal">
+    {{panal}}
         </mat-option>
       </mat-select>
       </mat-form-field>
@@ -83,9 +83,9 @@
         <ng-container *ngIf ="select2&&select1&&select">
 
         <mat-form-field class='full-width'>
-          <mat-select placeholder="Aspect Ratio" required name = "type" [(ngModel)]="monitor.type">
-          <mat-option  *ngFor="let type of typeList" [value]="type">
-    {{type}}
+          <mat-select placeholder="Aspect Ratio" required name = "aspect" [(ngModel)]="monitor.aspect">
+          <mat-option  *ngFor="let aspect of aspectList" [value]="aspect">
+    {{aspect}}
         </mat-option>
       </mat-select>
       </mat-form-field>
@@ -101,9 +101,9 @@
         <ng-container *ngIf ="select3&&select2&&select1&&select">
 
         <mat-form-field class='full-width'>
-          <mat-select placeholder="Port" required name = "type" [(ngModel)]="monitor.type">
-          <mat-option  *ngFor="let type of typeList" [value]="type">
-    {{type}}
+          <mat-select placeholder="Port" required name = "port" [(ngModel)]="monitor.port">
+          <mat-option  *ngFor="let port of portList" [value]="port">
+    {{port}}
         </mat-option>
       </mat-select>
       </mat-form-field>
@@ -121,9 +121,9 @@
         <ng-container *ngIf ="select4&&select3&&select2&&select1&&select">
 
         <mat-form-field class='full-width'>
-          <mat-select placeholder="Refresh Rate" required name = "type" [(ngModel)]="monitor.type">
-          <mat-option  *ngFor="let type of typeList" [value]="type">
-    {{type}}
+          <mat-select placeholder="Refresh Rate" required name = "refresh" [(ngModel)]="monitor.refresh">
+          <mat-option  *ngFor="let refresh of refreshList" [value]="refresh">
+    {{refresh}}
         </mat-option>
       </mat-select>
       </mat-form-field>
@@ -140,9 +140,9 @@
         <ng-container *ngIf ="select5&&select4&&select3&&select2&&select1&&select">
 
         <mat-form-field class='full-width'>
-          <mat-select placeholder="Respon Time" required name = "type" [(ngModel)]="monitor.type">
-          <mat-option  *ngFor="let type of typeList" [value]="type">
-    {{type}}
+          <mat-select placeholder="Respon Time" required name = "res" [(ngModel)]="monitor.res">
+          <mat-option  *ngFor="let res of resList" [value]="res">
+    {{res}}
         </mat-option>
       </mat-select>
       </mat-form-field>
@@ -159,9 +159,9 @@
         <ng-container *ngIf ="select6&&select5&&select4&&select3&&select2&&select1&&select">
 
         <mat-form-field class='full-width'>
-          <mat-select placeholder="Size" required name = "type" [(ngModel)]="monitor.type">
-          <mat-option  *ngFor="let type of typeList" [value]="type">
-    {{type}}
+          <mat-select placeholder="Size" required name = "size" [(ngModel)]="monitor.size">
+          <mat-option  *ngFor="let size of sizeList" [value]="size">
+    {{size}}
         </mat-option>
       </mat-select>
       </mat-form-field>
@@ -177,9 +177,9 @@
         <ng-container *ngIf ="select7&&select6&&select5&&select4&&select3&&select2&&select1&&select">
 
         <mat-form-field class='full-width'>
-          <mat-select placeholder="Feature" required name = "type" [(ngModel)]="monitor.type">
-          <mat-option  *ngFor="let type of typeList" [value]="type">
-    {{type}}
+          <mat-select placeholder="Feature" required name = "feature" [(ngModel)]="monitor.feature">
+          <mat-option  *ngFor="let feature of featureList" [value]="feature">
+    {{feature}}
         </mat-option>
       </mat-select>
       </mat-form-field>
@@ -196,9 +196,9 @@
         <ng-container *ngIf ="select8&&select7&&select6&&select5&&select4&&select3&&select2&&select1&&select">
 
         <mat-form-field class='full-width'>
-          <mat-select placeholder="Color" required name = "type" [(ngModel)]="monitor.type">
-          <mat-option  *ngFor="let type of typeList" [value]="type">
-    {{type}}
+          <mat-select placeholder="Color" required name = "color" [(ngModel)]="monitor.color">
+          <mat-option  *ngFor="let color of colorList" [value]="color">
+    {{color}}
         </mat-option>
       </mat-select>
       </mat-form-field>
@@ -215,9 +215,9 @@
       <ng-container *ngIf ="select9&&select8&&select7&&select6&&select5&&select4&&select3&&select2&&select1&&select">
 
       <mat-form-field class='full-width'>
-        <mat-select placeholder="Price" required name = "type" [(ngModel)]="monitor.type">
-        <mat-option  *ngFor="let type of typeList" [value]="type">
-  {{type}}
+        <mat-select placeholder="Price" required name = "price" [(ngModel)]="monitor.price">
+        <mat-option  *ngFor="let price of priceList" [value]="price">
+  {{price}}
       </mat-option>
     </mat-select>
     </mat-form-field>

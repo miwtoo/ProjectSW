@@ -9,13 +9,32 @@ import { HttpClient } from '@angular/common/http';
 export class AppComponent {
   typeList: Array<string>;
   resoList: Array<string>;
+  panalList: Array<string>;
+  aspectList: Array<string>;
+  portList: Array<string>;
+  refreshList: Array<string>;
+  resList: Array<string>;
+  sizeList: Array<string>;
+  featureList: Array<string>;
+  colorList: Array<string>;
+  priceList: Array<string>;
+
 
 
 
 
   monitor:any = {
     type:String,
-    reso:String
+    reso:String,
+    panal:String,
+    aspect:String,
+    port:String,
+    refresh:String,
+    res:String,
+    size:String,
+    feature:String,
+    color:String,
+    price:String,
   };
 
   result:any
@@ -130,6 +149,23 @@ export class AppComponent {
       this.buttonName1 = "ไม่เลือก";
     else
       this.buttonName1 = "เลือก";
+
+
+      
+      this.http.get("http://localhost:8080/api/panal/"+this.monitor.reso).subscribe(
+      (data: any) => {
+        console.log("GET Request is successful ", data);
+        this.panalList = data.data;
+        
+        console.log(this.resoList);
+        
+      },
+      error => {
+        console.log("Error", error);
+        alert("ผิดพลาด " + error)
+      }
+
+    );
   }
 
   toggle2() {
@@ -140,6 +176,22 @@ export class AppComponent {
       this.buttonName2 = "ไม่เลือก";
     else
       this.buttonName2 = "เลือก";
+
+
+      this.http.get("http://localhost:8080/api/aspect/"+this.monitor.panal).subscribe(
+        (data: any) => {
+          console.log("GET Request is successful ", data);
+          this.aspectList = data.data;
+          
+          console.log(this.resoList);
+          
+        },
+        error => {
+          console.log("Error", error);
+          alert("ผิดพลาด " + error)
+        }
+  
+      );
   }
 
   toggle3() {
@@ -150,6 +202,21 @@ export class AppComponent {
       this.buttonName3 = "ไม่เลือก";
     else
       this.buttonName3 = "เลือก";
+
+      this.http.get("http://localhost:8080/api/port/"+this.monitor.aspect).subscribe(
+        (data: any) => {
+          console.log("GET Request is successful ", data);
+          this.portList = data.data;
+          
+          console.log(this.resoList);
+          
+        },
+        error => {
+          console.log("Error", error);
+          alert("ผิดพลาด " + error)
+        }
+  
+      );
   }
 
   toggle4() {
@@ -160,6 +227,22 @@ export class AppComponent {
       this.buttonName4 = "ไม่เลือก";
     else
       this.buttonName4 = "เลือก";
+
+
+      this.http.get("http://localhost:8080/api/refreshRate/"+this.monitor.port).subscribe(
+        (data: any) => {
+          console.log("GET Request is successful ", data);
+          this.refreshList = data.data;
+          
+          console.log(this.resoList);
+          
+        },
+        error => {
+          console.log("Error", error);
+          alert("ผิดพลาด " + error)
+        }
+  
+      );
   }
 
   toggle5() {
@@ -170,6 +253,24 @@ export class AppComponent {
       this.buttonName5 = "ไม่เลือก";
     else
       this.buttonName5 = "เลือก";
+
+
+      this.http.get("http://localhost:8080/api/respon/"+this.monitor.refresh).subscribe(
+        (data: any) => {
+          console.log("GET Request is successful ", data);
+          this.resList = data.data;
+          
+          console.log(this.resoList);
+          
+        },
+        error => {
+          console.log("Error", error);
+          alert("ผิดพลาด " + error)
+        }
+  
+      );
+
+
   }
 
   toggle6() {
@@ -180,6 +281,22 @@ export class AppComponent {
       this.buttonName6 = "ไม่เลือก";
     else
       this.buttonName6 = "เลือก";
+
+
+      this.http.get("http://localhost:8080/api/size/"+this.monitor.res).subscribe(
+        (data: any) => {
+          console.log("GET Request is successful ", data);
+          this.sizeList = data.data;
+          
+          console.log(this.resoList);
+          
+        },
+        error => {
+          console.log("Error", error);
+          alert("ผิดพลาด " + error)
+        }
+  
+      );
   }
 
   toggle7() {
@@ -190,6 +307,22 @@ export class AppComponent {
       this.buttonName7 = "ไม่เลือก";
     else
       this.buttonName7 = "เลือก";
+
+
+      this.http.get("http://localhost:8080/api/future/"+this.monitor.size).subscribe(
+        (data: any) => {
+          console.log("GET Request is successful ", data);
+          this.featureList = data.data;
+          
+          console.log(this.resoList);
+          
+        },
+        error => {
+          console.log("Error", error);
+          alert("ผิดพลาด " + error)
+        }
+  
+      );
   }
 
   toggle8() {
@@ -200,6 +333,21 @@ export class AppComponent {
       this.buttonName8 = "ไม่เลือก";
     else
       this.buttonName8 = "เลือก";
+      this.http.get("http://localhost:8080/api/color/"+this.monitor.feature).subscribe(
+        (data: any) => {
+          console.log("GET Request is successful ", data);
+          this.colorList = data.data;
+          
+          console.log(this.resoList);
+          
+        },
+        error => {
+          console.log("Error", error);
+          alert("ผิดพลาด " + error)
+        }
+  
+      );
+
   }
 
   toggle9() {
@@ -210,6 +358,22 @@ export class AppComponent {
       this.buttonName9 = "ไม่เลือก";
     else
       this.buttonName9 = "เลือก";
+
+
+      this.http.get("http://localhost:8080/api/price/"+this.monitor.color).subscribe(
+        (data: any) => {
+          console.log("GET Request is successful ", data);
+          this.priceList = data.data;
+          
+          console.log(this.resoList);
+          
+        },
+        error => {
+          console.log("Error", error);
+          alert("ผิดพลาด " + error)
+        }
+  
+      );
   }
 
   toggle10() {
