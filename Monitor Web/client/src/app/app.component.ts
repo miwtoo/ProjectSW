@@ -62,7 +62,7 @@ export class AppComponent {
   
 
   find(){
-    this.http.get("http://localhost:8080/api/" + this.monitor.type).subscribe(
+    this.http.get("http://localhost:8080/api/" + this.monitor.type + "/" + this.monitor.reso + "/" + this.monitor.panal + "/" + this.monitor.aspect + "/" + this.monitor.port + "/" + this.monitor.refresh + "/" + this.monitor.res + "/" + this.monitor.size + "/" + this.monitor.feature + "/"+this.monitor.color+ "/" + this.monitor.price).subscribe(
       (data:any) => {
         console.log("GET Request is successful ", data);
         this.result = data.data;

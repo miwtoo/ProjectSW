@@ -53,6 +53,63 @@ public class MonitorContoller {
     public Set<String> ListFeature = new HashSet<String>();
     private String feature;
 
+    @GetMapping("/all")
+    public ResponseEntity<Map<String, Object>> findMonitor() {
+
+        Map<String, Object> json = new HashMap<String, Object>();
+        Set<String> ListMonitor = new HashSet<String>();
+        Set<Map> monitors = new HashSet<Map>();
+
+        try {
+            // OntModel model = OpenOWL.OpenConnectOWL();
+
+            System.out.println("Get All");
+            String queryString;
+            queryString = "PREFIX ex:<http://www.semanticweb.org/user/ontologies/2019/1/untitled-ontology-25#> "
+                    + "PREFIX rdf:<http://www.w3.org/1999/02/22-rdf-syntax-ns#> "
+                    + "PREFIX rdfs:<http://www.w3.org/2000/01/rdf-schema#>"
+                    + "SELECT  (str(?y) as ?Name)  (str(?img) as ?Img)"
+                    + "where {{?x rdfs:subClassOf ex:PC_Monitor. }"
+                    + "OPTIONAL {?y rdf:type ?x.}"
+                    + "OPTIONAL {?y rdfs:seeAlso ?img.}"
+                    + "}";
+             System.out.println(queryString);
+            com.hp.hpl.jena.query.ResultSet results = OpenOWL.ExecSparQl(queryString); // all method ExecSparQl from
+
+            while (results.hasNext()) {
+
+                QuerySolution soln = results.nextSolution();
+
+                String name = soln.getLiteral("Name").getString();
+                String img = soln.getLiteral("Img").getString();
+
+                System.out.println("name " + name.toString().split("#")[1]);
+
+                Map<String, String> monitor = new HashMap<String, String>();
+
+                monitor.put("name", name.toString().split("#")[1]);
+                monitor.put("img", img.toString());
+
+                monitors.add(monitor);
+
+            }
+
+            json.put("data", monitors);
+
+            HttpHeaders headers = new HttpHeaders();
+            headers.add("Content-Type", "application/json; charset=UTF-8");
+            return (new ResponseEntity<Map<String, Object>>(json, headers, HttpStatus.OK));
+
+
+        } catch (Exception ex) {
+            json.put("message", "error");
+            json.put("error", ex);
+            HttpHeaders headers = new HttpHeaders();
+            headers.add("Content-Type", "application/json; charset=UTF-8");
+            return (new ResponseEntity<Map<String, Object>>(json, headers, HttpStatus.NOT_FOUND));
+        }
+    }
+
     @GetMapping("/{type}/{reso}/{panal}/{aspect}/{port}/{refresh}/{respon}/{size}/{feature}/{color}/{price}")
     public ResponseEntity<Map<String, Object>> findMonitor(@PathVariable String type, @PathVariable String reso, @PathVariable String panal, @PathVariable String aspect, @PathVariable String port, @PathVariable String refresh, @PathVariable String respon, @PathVariable String size, @PathVariable String feature, @PathVariable String color, @PathVariable String price) {
 
@@ -78,8 +135,8 @@ public class MonitorContoller {
                     + "?monitor ex:hasRefreshRate ex:"+refresh+"."
                     + "?monitor ex:hasRespontime ex:"+respon+"."
                     + "?monitor ex:hasSize ex:"+size+"."
-                    //+ "?monitor ex:hasfeatures ex:"+feature+"."
-                    //+ "?monitor ex:hasColor ex:"+color+"."
+                    + "?monitor ex:hasfeatures ex:"+feature+"."
+                    + "?monitor ex:hasColor ex:"+color+"."
                     + "?monitor ex:hasPrice ex:"+price+".}"
                     + "}";
              System.out.println(queryString);
@@ -130,7 +187,7 @@ public class MonitorContoller {
                     + "PREFIX rdf:<http://www.w3.org/1999/02/22-rdf-syntax-ns#> "
                     + "PREFIX rdfs:<http://www.w3.org/2000/01/rdf-schema#>" + "SELECT  (str(?x) as ?Component) "
                     + "where { ?x rdfs:subClassOf ex:PC_Monitor." + " }";
-
+            System.out.println(queryString);
             com.hp.hpl.jena.query.ResultSet results = OpenOWL.ExecSparQl(queryString); // all method ExecSparQl from
                                                                                        // OpenOWL class
 
